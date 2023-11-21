@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <script src="JS/jquery.js"></script>
+    <script src="JS/login-register.js"></script>
     <title>GymFit :: Home</title>
 </head>
 <body>
