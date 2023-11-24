@@ -48,7 +48,7 @@
                 <a href="#home" class="return-btn">Close</a>
                 <h2>Register</h2>
                 <span class="divider-full"></span>
-                <form action="" class="form" id="register-form">
+                <form action="POST" class="form" id="register-form">
                     <p>Register As:</p>
                     <div id="reg-toggle">
                         <label class="slider"><input type="checkbox" name="member" id="member">Member</label>
