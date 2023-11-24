@@ -64,13 +64,8 @@ class Gym_Member{
             die("Connection failed: " . $conn->connect_error);
         }
         $sql = "SELECT Member_ID from Gym_Member Where Email = '$email' AND Where Member_Password = '$password'";
-<<<<<<< HEAD
-        $result = $conn->query($sql);
-        return $UserID["Member_ID"];
-=======
 
 
->>>>>>> ebc26a6c883b3a89859b01883a90aad463bcb7b5
     }
 
 
