@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
 *{
     font-family: 'Exo', sans-serif;
+    color: whitesmoke;
 }
 html{
     margin: 0;
     height: 100%;
+    background-color: black;
 }
 #back-image{
     background: url('https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHx8MA%3D%3D');
-    opacity: 25%;
+    opacity: 45%;
     background-size: cover;
     background-position: center;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     border: 0;
     margin: 0;
+    z-index: -1;
 }
 .heading-title{
+    color: whitesmoke;
     padding-left: 10px;
     font-size: 30px;
 }
@@ -157,7 +161,7 @@ footer h3{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
     width: 100%;
     padding-bottom:5px;
 }
@@ -166,6 +170,7 @@ footer h3{
 }
 .form input{
     display: inline-block;
+    font-size: 15px;
     height: 30px;
     width: 80%;
     margin-bottom: 10px;

@@ -29,8 +29,8 @@
             </div>
             <form action="" class="form">
                 <div>
-                    <label for="username">Username:</label>
-                    <input type="text" name="username">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email">
                 </div>
                 <div>
                     <label for="password">Password:</label>
@@ -53,10 +53,6 @@
                     <div id="reg-toggle">
                         <label class="slider"><input type="checkbox" name="member" id="member">Member</label>
                         <label class="slider"><input type="checkbox" name="trainer" id="trainer">Trainer</label>
-                    </div>
-                    <div>
-                        <label for="username">Username:</label>
-                        <input type="text" name="username">
                     </div>
                     <div>
                         <label for="email">Email:</label>
