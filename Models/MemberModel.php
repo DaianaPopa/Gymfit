@@ -36,6 +36,14 @@ class Gym_Member{
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
+        $sql = "SELECT Member_Password From Gym_Member Where Email = '$email'";
+        $result = $conn->query($sql);
+        if($result->num_rows < 0){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 
     public static function Get_Member_ID_By_Email_Passsword($email,$password){
@@ -44,8 +52,8 @@ class Gym_Member{
             die("Connection failed: " . $conn->connect_error);
         }
         $sql = "SELECT Member_ID from Gym_Member Where Email = '$email' AND Where Member_Password = '$password'";
-        
-
+        $result = $conn->query($sql);
+        return $UserID["Member_ID"];
     }
 
 

@@ -1,3 +1,4 @@
+<?php include("../controllers/LoginHelper.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
