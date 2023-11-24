@@ -1,6 +1,6 @@
 <?php
 class Gym_Member{
-    public static function Create_Member($firstname,$surname,$email,$DOB,$height,$weight,$password ){
+    public static function Create_Member($email,$password){
         //THis function creates a new member call it with Gym_Member :: Create_Member
         $DBHostname = "gymfit.mysql.database.azure.com";
         $DBUsername = "Group9";
@@ -11,8 +11,8 @@ class Gym_Member{
             die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "INSERT INTO MEMBER(Firstname,Surname,Email,DOB,Height,Weight)
-        Values($firstname,$surname,$email,$DOB,$height,$weight)";
+        $sql = "INSERT INTO MEMBER(Email, Member_Password)
+        Values($email, $password)";
         $conn->query($sql);
     }
 
@@ -32,7 +32,7 @@ class Gym_Member{
             return "none";
         }
         $password = $result->fetch_assoc();
-        return $password["Member_Password"];
+        return $password;
     } 
 
     public static function Check_Member_Exists_By_Email($Email){
@@ -64,13 +64,8 @@ class Gym_Member{
             die("Connection failed: " . $conn->connect_error);
         }
         $sql = "SELECT Member_ID from Gym_Member Where Email = '$email' AND Where Member_Password = '$password'";
-<<<<<<< HEAD
         $result = $conn->query($sql);
         return $UserID["Member_ID"];
-=======
-
-
->>>>>>> ebc26a6c883b3a89859b01883a90aad463bcb7b5
     }
 
 

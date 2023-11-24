@@ -1,4 +1,11 @@
-<?php include("../controllers/LoginHelper.php"); ?>
+<?php 
+session_start();
+include("../controllers/LoginHelper.php");
+include("../Controllers/registrationHelper.php");
+Login :: Login_Member();
+Register :: Add_Member();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +35,7 @@
                 <h2>Login</h2>
                 <span class="divider-full"></span>
             </div>
-            <form action="" class="form">
+            <form action="POST" class="form">
                 <div>
                     <label for="email">Email:</label>
                     <input type="text" name="email">
@@ -56,12 +63,12 @@
                         <label class="slider"><input type="checkbox" name="trainer" id="trainer">Trainer</label>
                     </div>
                     <div>
-                        <label for="email">Email:</label>
-                        <input type="text" name="email">
+                        <label for="emailReg">Email:</label>
+                        <input type="text" name="emailReg">
                     </div>
                     <div>
-                        <label for="password">Password:</label>
-                        <input type="text" name="password">
+                        <label for="passwordReg">Password:</label>
+                        <input type="text" name="passwordReg">
                     </div>
                     <div>
                         <button type="submit" class="button">Register</button>
