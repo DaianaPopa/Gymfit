@@ -59,8 +59,8 @@ Register :: Add_Member();
                 <form action="POST" class="form" id="register-form">
                     <p>Register As:</p>
                     <div id="reg-toggle">
-                        <label class="slider"><input type="checkbox" name="member" id="member">Member</label>
-                        <label class="slider"><input type="checkbox" name="trainer" id="trainer">Trainer</label>
+                        <label class="slider"><input type="checkbox" name="memberReg" id="member">Member</label>
+                        <label class="slider"><input type="checkbox" name="trainerReg" id="trainer">Trainer</label>
                     </div>
                     <div>
                         <label for="emailReg">Email:</label>

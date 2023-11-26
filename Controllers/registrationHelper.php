@@ -1,33 +1,46 @@
 <?php
 include('../MemberModel.php');
-session_start();
+include("../TrainerModel.php");
+include("LoginHelper.php");
 
 Class Register
 {
-    public static function Add_Member()
+    public static function Register_Query()
     {
-        $newEmail = $_POST["email"];
-        $newPassword = $_POST["password"];
-        if (Gym_Member :: Check_Member_Exists_By_Email($newEmail) == true)
+        $emailReg = $_POST["emailReg"];
+        $passwordReg = $_POST["passwordReg"];
+        //Checking for Member Checkbox Seleted
+        if(isset($_POST["memberReg"]))
         {
-            Gym_Member :: Error_Report_Exiting_Member();
+            if( Gym_Member :: Check_Member_Exists_By_Email($emailReg) == true )
+            {
+                //Report Error Message for account already existing
+                break;
+            }
+            Register_Member($emailReg, $passwordReg);
         }
-        else
+        //Checking for Trainer Checkbox Seleted
+        if(isset($_POST["trainerReg"]))
         {
-            Gym_Member :: Create_Member();
+            if( Gym_Trainer :: Check_Trainer_Exists_By_Email($emailReg) == true )
+            {
+                //Report Error Message for account already existing
+                break;
+            }
+            Register_Trainer($emailReg, $passwordReg);
         }
     }
-    public static function Add_Trainer()
+
+    //Both automatically sign in using the newly created account
+    public static function Register_Member($emailReg, $passwordReg)
     {
-        //Josh Will Write Good Code Here
+        Gym_Member :: Create_Member($emailReg, $passwordReg);
+        Login :: Login_Member($emailReg, $passwordReg);
     }
-
-    private function Error_Report_Exiting_Member_Or_Trainer()
+    public static function Register_Trainer($emailReg, $passwordReg)
     {
-        //Code stuff for error message
+        Gym_Trainer :: Create_Trainer($emailReg, $passwordReg);
+        Login :: Login_Trainer($emailReg, $passwordReg);
     }
-
-
 }
-
 ?>
