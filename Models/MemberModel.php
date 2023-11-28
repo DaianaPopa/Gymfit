@@ -6,7 +6,7 @@ class Gym_Member{
         $DBUsername = "Group9";
         $DBPassword = "Gr9!gotime";
         $DBName = "gymfit";
-        $conn = new mysqli($DBHostname,$DBUsername,$DBPassword);
+        $conn = new mysqli($DBHostname,$DBUsername,$DBPassword,$DBName);
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
@@ -18,7 +18,7 @@ class Gym_Member{
 
     public static function Get_Password_By_Email($email){
         // Get a member by email
-        $DBHostname = "gymfit.mysql.database.azure.com";
+        $DBHostname = "gymfit.mysql.database.azure.com";    
         $DBUsername = "Group9";
         $DBPassword = "Gr9!gotime";
         $DBName = "gymfit";
