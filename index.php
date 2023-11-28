@@ -1,9 +1,10 @@
 <?php 
 session_start();
-include("../controllers/LoginHelper.php");
-include("../Controllers/registrationHelper.php");
-Login :: Login_Member();
-Register :: Add_Member();
+require_once('Controllers/controller.php');
+if (isset($_POST["email"]) && isset($_POST["password"])){
+    Login :: Login_Query();
+}
+//Register :: Add_Member();
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ Register :: Add_Member();
                 <h2>Login</h2>
                 <span class="divider-full"></span>
             </div>
-            <form action="POST" class="form">
+            <form method="POST" class="form">
                 <div>
                     <label for="email">Email:</label>
                     <input type="text" name="email">
@@ -56,7 +57,7 @@ Register :: Add_Member();
                 <a href="#home" class="return-btn">Close</a>
                 <h2>Register</h2>
                 <span class="divider-full"></span>
-                <form action="POST" class="form" id="register-form">
+                <form method="POST" class="form" id="register-form">
                     <p>Register As:</p>
                     <div id="reg-toggle">
                         <label class="slider"><input type="checkbox" name="memberReg" id="member">Member</label>
@@ -79,8 +80,8 @@ Register :: Add_Member();
     </div>
     <div>
     </div>
-    <footer>
-        <h3>Copyright 2023</h3>
-    </footer>
+     <?php
+       include("Controllers/footer.php");
+   ?>
 </body>
 </html>

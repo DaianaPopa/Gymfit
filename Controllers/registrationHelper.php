@@ -1,7 +1,4 @@
 <?php
-include('../MemberModel.php');
-include("../TrainerModel.php");
-include("LoginHelper.php");
 
 Class Register
 {
@@ -15,7 +12,6 @@ Class Register
             if( Gym_Member :: Check_Member_Exists_By_Email($emailReg) == true )
             {
                 //Report Error Message for account already existing
-                break;
             }
             Register_Member($emailReg, $passwordReg);
         }
@@ -25,7 +21,6 @@ Class Register
             if( Gym_Trainer :: Check_Trainer_Exists_By_Email($emailReg) == true )
             {
                 //Report Error Message for account already existing
-                break;
             }
             Register_Trainer($emailReg, $passwordReg);
         }

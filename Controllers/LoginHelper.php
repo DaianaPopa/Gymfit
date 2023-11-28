@@ -1,20 +1,18 @@
 <?php
-include('../MemberModel.php');
-include("../TrainerModel.php");
 
 class Login{
 
     public static function Login_Query()
     {
-        $email = trim($_POST["email"]);
-        $password = trim($_POST["password"]);
+        $email = $_POST["email"];
+        $password = $_POST["password"];
         if (Gym_Member :: Check_Member_Exists_By_Email($email) == true)
         {
-            Login_Member($email, $password);
+            Login ::Login_Member($email, $password);
         }
         if (Gym_Trainer :: Check_Trainer_Exists_By_Email($email) == true)
         {
-            Login_Trainer($email, $password);
+            Login :: Login_Trainer($email, $password);
         }
         //else
         //Provide Error Feedback for unrecognised email
@@ -49,7 +47,7 @@ class Login{
 
     public static function Login_Success()
     {
-        header("location: Views/home.php");
+        echo '<script>alert("Hello")</script>';
     }
 }
 ?>
