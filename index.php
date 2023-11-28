@@ -80,8 +80,8 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
     </div>
     <div>
     </div>
-    <footer>
-        <h3>Copyright 2023</h3>
-    </footer>
+     <?php
+       include("Controllers/footer.php");
+   ?>
 </body>
 </html>
