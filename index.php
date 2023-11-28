@@ -79,8 +79,8 @@ Register :: Add_Member();
     </div>
     <div>
     </div>
-    <footer>
-        <h3>Copyright 2023</h3>
-    </footer>
+     <?php
+       include("Controllers/footer.php");
+   ?>
 </body>
 </html>
