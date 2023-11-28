@@ -39,8 +39,8 @@ class Gym_Member{
         $DBHostname = "gymfit.mysql.database.azure.com";
         $DBUsername = "Group9";
         $DBPassword = "Gr9!gotime";
-        $DBName - "gymfit";
-        $conn = new mysqli($DBHostname,$DBUsername,$DBPassword);
+        $DBName = "gymfit";
+        $conn = new mysqli($DBHostname,$DBUsername,$DBPassword, $DBName);
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
@@ -58,7 +58,7 @@ class Gym_Member{
         $DBHostname = "gymfit.mysql.database.azure.com";
         $DBUsername = "Group9";
         $DBPassword = "Gr9!gotime";
-        $DBName - "gymfit";
+        $DBName = "gymfit";
         $conn = new mysqli($DBHostname,$DBUsername,$DBPassword);
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
