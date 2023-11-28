@@ -4,7 +4,7 @@ include("../TrainerModel.php");
 
 class Login{
 
-    public static function Login_Query();
+    public static function Login_Query()
     {
         $email = trim($_POST["email"]);
         $password = trim($_POST["password"]);
