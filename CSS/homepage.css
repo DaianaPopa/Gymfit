@@ -356,6 +356,10 @@ textarea {
 input[type="submit"] {
     width: 400px;
 }
+.btn-2:hover{
+    text-decoration: none;
+    color: #000000;
+}
 
 main {
     margin-bottom: 120px
