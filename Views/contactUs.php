@@ -61,9 +61,9 @@
         <p> Sheffield, South Yorkshire, UK</p>
         <p>Tel:(44) 22445050</p>
         <p>Email: info@gymfit.com</p>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d76149.78157292848!2d-1.4846933!3d53.3847628!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48790aa9fae8be15%3A0x3e2827f5af06b078!2sSheffield!5e0!3m2!1sen!2suk!4v1701258233592!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <iframe src="https://www.google.com/maps/place/Sheffield/@53.3827184,-1.6485374,12z/data=!4m15!1m8!3m7!1s0x48790aa9fae8be15:0x3e2827f5af06b078!2sSheffield!3b1!8m2!3d53.381129!4d-1.470085!16zL20vMG03NWc!3m5!1s0x48790aa9fae8be15:0x3e2827f5af06b078!8m2!3d53.381129!4d-1.470085!16zL20vMG03NWc?entry=ttu" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+      </section>
   </main>
 </div>
 
