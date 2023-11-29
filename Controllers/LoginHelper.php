@@ -25,7 +25,7 @@ class Login{
             $_SESSION["UserID"] = Gym_Member :: Get_Member_ID_By_Email_Passsword($email,$password);
             $_SESSION["Login-State"] = true;
             $_SESSION["user-type"] = "Member";
-            Login_Success();
+            Login :: Login_Success();
         }
         //else
         //Provide Error Feedback for unrecognised password
@@ -38,8 +38,8 @@ class Login{
         {
             $_SESSION["UserID"] = Gym_Trainer :: Get_Trainer_ID_By_Email_Passsword($email,$password);
             $_SESSION["Login-State"] = true;
-            $_SESSION["user-type"] = "Trainer";
-            Login_Success();
+            $_SESSION["User-Type"] = "Trainer";
+            Login :: Login_Success();
         }
         //else
         //Provide Error Feedback for unrecognised password
@@ -47,7 +47,7 @@ class Login{
 
     public static function Login_Success()
     {
-        echo '<script>alert("Hello")</script>';
+        header("location: Views/home.php");
     }
 }
 ?>

@@ -30,7 +30,7 @@ class Gym_Trainer{
             return "none";
         }
         $password = $result->fetch_assoc();
-        return $password;
+        return $password["Trainer_Password"];
     }
 
     public static function Check_Trainer_Exists_By_Email($email){

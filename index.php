@@ -1,5 +1,4 @@
 <?php 
-session_start();
 require_once('Controllers/controller.php');
 if (isset($_POST["email"]) && isset($_POST["password"])){
     Login :: Login_Query();
@@ -80,8 +79,5 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
     </div>
     <div>
     </div>
-     <?php
-       include("Controllers/footer.php");
-   ?>
 </body>
 </html>
