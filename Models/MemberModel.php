@@ -38,7 +38,5 @@ class Gym_Member{
         $result = $conn->query($sql);
         return $UserID["Member_ID"];
     }
-
-
 }
 ?>
