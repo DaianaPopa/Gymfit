@@ -6,7 +6,7 @@ class Gym_Member{
     public static function Create_Member($email,$password){
         //THis function creates a new member call it with Gym_Member :: Create_Member
         $conn = Config :: Db_Connect();
-        $sql = "INSERT INTO MEMBER(Email, Member_Password)Values($email, $password)";
+        $sql = "INSERT INTO gym_member(Email, Member_Password)Values($email, $password)";
         $conn->query($sql);
     }
 
