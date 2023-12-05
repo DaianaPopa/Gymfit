@@ -14,6 +14,10 @@
         <a href="">See Daily Goal</a>
     </div>
     <div class="sep-bar"></div>
+
     
+<?php
+include("../Controllers/footer.php");
+?>
 </body>
 </html>
