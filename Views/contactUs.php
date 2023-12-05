@@ -11,7 +11,7 @@
     />
 </head>
 <body>
-
+ <div id="back-image"></div>
 <div class="mainContainer">
   <main>
     <div class="banners">
