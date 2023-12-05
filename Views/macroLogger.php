@@ -15,5 +15,9 @@
     c amount
     f amount
     calories 
+    
+<?php
+include("../Controllers/footer.php");
+?>
 </body>
 </html>
