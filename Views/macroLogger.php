@@ -55,7 +55,7 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
     </div>
     
 <?php
-include("../Controllers/footer.php");
+//include("../Controllers/footer.php");
 ?>
 </body>
 </html>

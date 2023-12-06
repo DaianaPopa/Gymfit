@@ -35,7 +35,7 @@ $_SESSION['member_Id'] = 1;
 
     
 <?php
-include("../Controllers/footer.php");
+//include("../Controllers/footer.php");
 ?>
 </body>
 </html>
