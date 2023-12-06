@@ -83,3 +83,49 @@ footer>nav>menu>li>a {
 footer>div {
     text-align: center;
 }
+.button{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    padding-bottom:5px;
+}
+.form label{
+    display: block;
+}
+.form input{
+    display: inline-block;
+    font-size: 15px;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: rgba(219, 197, 208, 0.25);
+    color: whitesmoke;
+    border-radius: 12px;
+    border: 0.5px solid grey;
+    padding-left: 5px;
+}
+.form div{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form .button{
+    margin-top: 10px;
+    width: auto;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
