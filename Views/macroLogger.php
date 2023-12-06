@@ -9,7 +9,6 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

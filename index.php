@@ -1,6 +1,8 @@
 <?php 
 session_start();
-require_once('Controllers/controller.php');
+include "LoginHelper.php";
+include "registrationHelper.php";
+
 if (isset($_POST["email"]) && isset($_POST["password"])){
     Login :: Login_Query();
 }
