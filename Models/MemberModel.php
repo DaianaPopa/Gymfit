@@ -1,4 +1,5 @@
 <?php
+include("ConfigModel.php");
 class Gym_Member{
     
     public static function Create_Member($email,$password){
