@@ -1,4 +1,6 @@
 <?php
+
+
 class Gym_Member{
     public static function Create_Member($email,$password){
         //THis function creates a new member call it with Gym_Member :: Create_Member
@@ -32,10 +34,10 @@ class Gym_Member{
             return "none";
         }
         $password = $result->fetch_assoc();
-        return $password;
+        return $password["Member_Password"];
     } 
 
-    public static function Check_Member_Exists_By_Email($Email){
+    public static function Check_Member_Exists_By_Email($email){
         $DBHostname = "gymfit.mysql.database.azure.com";
         $DBUsername = "Group9";
         $DBPassword = "Gr9!gotime";

@@ -1,15 +1,13 @@
-<?php 
+<?php
 session_start();
 require_once('Controllers/controller.php');
 if (isset($_POST["email"]) && isset($_POST["password"])){
     Login :: Login_Query();
 }
-//Register :: Add_Member();
+if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"])){
+    Register :: Register_Query();
+}
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/homepage.css">
@@ -80,8 +78,5 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
     </div>
     <div>
     </div>
-     <?php
-       include("Controllers/footer.php");
-   ?>
 </body>
 </html>
