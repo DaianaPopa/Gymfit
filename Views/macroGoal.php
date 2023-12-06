@@ -1,3 +1,9 @@
+<?php
+$_SESSION['member_Id'] = 1;
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +16,7 @@
 <body>
     <div id="back-image"></div>
     <h1 class="title">Todays Macro Goal</h1>
-    <div class="sep-bar"></div>
+    <div class"sep-bar"></div>
     <p>Goal Information</p>
     <div class="sep-bar"></div>
     <a href="#" id="new-goal">Set a New Goal ▼</a>
