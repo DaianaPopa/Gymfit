@@ -129,3 +129,24 @@ footer>div {
     cursor: pointer;
     background-color: rgba(0,0,0,0);
 }
+#macro-grid{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.macro-item{
+    margin: 0 10px 0 10px;
+    display: block;
+    flex-basis: 40%;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    width: auto;
+    padding: 5px 0 5px 0;
+
+}
+.bold{
+    font-weight: 700;
+}
