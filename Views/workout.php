@@ -12,29 +12,15 @@
 
   </head>
   <body>
-    
-    <section>
-        <div class="m-aboutus">
-        <div class="container">
-        <div class="heading">
-            <h2 style=" color: grey;"> Fitness </h2>
-        </div>
-        <div class="row">
-        <div class="contents">
-        <p>Getting into a consistent fitness routine can feel daunting, but it is the only way to see real results. 
-          Exercising regularly can feel hard when you are not used to it, but our thainers and classes are here to help you. </p>
-        </div>
-        </div>
-        </div>
-        <div class="row"></div>
-        </div>
-        </div>
-    </section>
+  <div id="back-image"></div>
+    <h1 class="title">Workout</h1>
+    <h5><p>Getting into a consistent fitness routine can feel daunting, but it is the only way to see real results. 
+          Exercising regularly can feel hard when you are not used to it, but our thainers and classes are here to help you. 
+        </p></h5>
 
     <section>
       <div class="projects grid">
       <div class="container">
-        <div>
            <h5><span class="p-hover">Our Classes</span></h5>
       <div class="row" style=" margin-bottom: 30px;">
       <div class="col-md-4 projects-1">
@@ -53,7 +39,7 @@
               <p class="card-text"><small class="text-muted">30 min</small></p>
         </div>
         </div>
-        </div> 
+       
         <div class="row">
         <div class="col-md-4 projects-1">
                <img src="../Docs/sprint.jpg" class="img-fluid" alt="workout1">
@@ -72,30 +58,32 @@
        </div>
        </div>
        </div>
-    </section>
-
+</div>
+</section>
 <section>
+<div class="projects grid">
 <div class="container">
 <h5><span class="p-hover">Our Trainers</span></h5>
 <div class="row" style=" margin-bottom: 30px;">
 <div class="col-lg-4">
             <img class="rounded-circle" src="../Docs/trainer1.jpg" alt="Trainer1" width="140" height="140">
-            <h2>Tomas</h2>
-            <p>Specialities: Sport specific training and rehabilitation programming, resistance training & weight loss</p>
+            <p>Tomas</p>
+            <p>Specialty: Resistance training.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
  </div>
   <div class="col-lg-4">
             <img class="rounded-circle" src="../Docs/trainer2.png" alt="trainer2" width="140" height="140">
-            <h2>Ashley</h2>
-            <p>Specialities: Fat reduction and muscle gain.</p>
+            <p>Ashley</p>
+            <p>Specialty: Fat reduction and muscle gain.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
  </div>
   <div class="col-lg-4">
             <img class="rounded-circle" src="../Docs/trainer3.jpg" alt="Traine3" width="140" height="140">
-            <h2>Callum</h2>
-            <p>Specialities: Hypertrophy and strength training.</p>
+            <p>Callum</p>
+            <p>Specialty: Hypertrophy and strength training.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
           </div>
+</div>
 </div>
 </div>
 </section>
