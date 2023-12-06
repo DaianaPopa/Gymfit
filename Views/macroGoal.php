@@ -1,5 +1,4 @@
 <?php
-// skibi toitlet
 include '../Controllers/GoalHelper.php';
 
 //skibi test data replace with the real shite when the gazorpazorp is ready to sqwaunch
@@ -18,7 +17,7 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gymfit :: Macro Goal</title>
     <link
       rel="stylesheet"
       href="../CSS/homepage.css"
