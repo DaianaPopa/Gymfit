@@ -1,5 +1,11 @@
 <?php
+include '../Controllers/GoalHelper.php';
+
 $_SESSION['member_Id'] = 1;
+
+if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]) && isset($_POST["carbs"])){
+    Goal_Helper :: New_Goal($_SESSION['member_Id'],$_POST['protein'],$_POST['carbs'],$_POST['calories'],$_POST['fat']);
+}
 ?>
 
 
@@ -21,7 +27,7 @@ $_SESSION['member_Id'] = 1;
     <div id="back-image"></div>
     <h1 class="title">Todays Macro Goal</h1>
     <div class"sep-bar"></div>
-    <div></div>
+    <div><?php Goal_Helper :: Display_Goal($_SESSION['member_Id']);?></div>
     <div class="sep-bar"></div>
     <a href="#" id="new-goal">Set a New Goal ▼</a>
             <div class="top-bar">
@@ -30,19 +36,19 @@ $_SESSION['member_Id'] = 1;
             <form method="POST" class="form">
                 <div>
                     <label for="calories">Calories:</label>
-                    <input type="text" name="email">
+                    <input type="text" name="calories">
                 </div>
                 <div>
                     <label for="protein">Protein:</label>
-                    <input type="text" name="password">
+                    <input type="text" name="protein">
                 </div>
                 <div>
-                    <label for="calories">Carbs:</label>
-                    <input type="text" name="email">
+                    <label for="carbs">Carbs:</label>
+                    <input type="text" name="carbs">
                 </div>
                 <div>
-                    <label for="protein">Fat:</label>
-                    <input type="text" name="password">
+                    <label for="fat">Fat:</label>
+                    <input type="text" name="fat">
                 </div>
                 <div>
                     <button type="submit" class="button">Set Goal</button>

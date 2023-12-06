@@ -1,8 +1,5 @@
 <?php
 
-include("Models/Config.php");
-
-
 class Gym_Trainer{
     public static function Create_Trainer($email,$password){
         $conn = Config :: Db_Connect();

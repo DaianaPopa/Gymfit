@@ -1,5 +1,5 @@
 <?php
-include('Config.php');
+include("ConfigModel.php");
 class Macro_Goals{
     public static function Create_Goal($ID,$protein,$carbs,$fat,$calories){
         $conn = Config :: Db_Connect();
@@ -13,12 +13,13 @@ class Macro_Goals{
             return false;
         }
         else{
-            return $result;
+            return $result->fetch_assoc();
         }
     }
     public static function Update_Goal($ID,$protein,$carbs,$fat,$calories){
         $conn = Config :: Db_Connect();
-        $sql;
+        $sql = "UPDATE macro_goal SET Protein = $protein, Carbs = $carbs, Fat = $fat, Calories = $calories WHERE Member_ID = $ID";
+        $conn->query($sql);
     }
 }
 ?>

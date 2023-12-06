@@ -1,4 +1,4 @@
-<?
+<?php
 Class Config{
 
     public static function Db_Connect(){
@@ -9,8 +9,8 @@ Class Config{
         $conn = new mysqli($DBHostname,$DBUsername,$DBPassword,$DBName);
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
-            echo $conn->connect_error;
         }
         return $conn;
     }
 }
+?>

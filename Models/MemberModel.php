@@ -1,6 +1,4 @@
 <?php
-include("Config.php");
-include("GoalModel.php");
 class Gym_Member{
     
     public static function Create_Member($email,$password){
@@ -37,7 +35,7 @@ class Gym_Member{
 
     public static function Get_Member_ID_By_Email_Passsword($email,$password){
         $conn = Config :: Db_Connect();
-        $sql = "SELECT Member_ID from Gym_Member Where Email = '$email' AND Where Member_Password = '$password'";
+        $sql = "SELECT Member_ID from Gym_Member Where Email = '$email' AND Member_Password = '$password'";
         
         $result = $conn->query($sql);
         return $UserID["Member_ID"];
