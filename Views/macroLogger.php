@@ -41,11 +41,11 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
                 </div>
                 <div>
                     <label for="calories">Carbs:</label>
-                    <input type="text" name="Carbs">
+                    <input type="text" name="carbs">
                 </div>
                 <div>
                     <label for="protein">Fat:</label>
-                    <input type="text" name="Fat">
+                    <input type="text" name="fat">
                 </div>
                 <div>
                     <button type="submit" class="button">Log</button>
