@@ -1,4 +1,4 @@
-<?php
+<?php 
 session_start();
 require_once('Controllers/controller.php');
 if (isset($_POST["email"]) && isset($_POST["password"])){

@@ -41,7 +41,7 @@ class Login{
         {
             $_SESSION["UserID"] = Gym_Trainer :: Get_Trainer_ID_By_Email_Passsword($email,$password);
             $_SESSION["Login-State"] = true;
-            $_SESSION["user-type"] = "Trainer";
+            $_SESSION["User-Type"] = "Trainer";
             Login :: Login_Success();
         }
         //else

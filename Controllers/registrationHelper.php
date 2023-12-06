@@ -13,7 +13,7 @@ Class Register
             {
                 //Report Error Message for account already existing
             }
-            Register_Member($emailReg, $passwordReg);
+            Register :: Register_Member($emailReg, $passwordReg);
         }
         //Checking for Trainer Checkbox Seleted
         if(isset($_POST["trainerReg"]))
@@ -22,7 +22,7 @@ Class Register
             {
                 //Report Error Message for account already existing
             }
-            Register_Trainer($emailReg, $passwordReg);
+            Register :: Register_Trainer($emailReg, $passwordReg);
         }
     }
 
