@@ -1,6 +1,8 @@
 <?php
+// skibi toitlet
 include '../Controllers/GoalHelper.php';
 
+//skibi test data replace with the real shite when the gazorpazorp is ready to sqwaunch
 $_SESSION['member_Id'] = 1;
 
 if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]) && isset($_POST["carbs"])){
