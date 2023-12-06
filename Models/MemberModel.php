@@ -22,14 +22,8 @@ class Gym_Member{
         return $password["Member_Password"];
     } 
 
-    public static function Check_Member_Exists_By_Email($Email){ 
-        $conn = Config :: Db_Connect();
     public static function Check_Member_Exists_By_Email($email){
-        $DBHostname = "gymfit.mysql.database.azure.com";
-        $DBUsername = "Group9";
-        $DBPassword = "Gr9!gotime";
-        $DBName = "gymfit";
-        $conn = new mysqli($DBHostname,$DBUsername,$DBPassword, $DBName);
+        $conn = Config :: Db_Connect();
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
