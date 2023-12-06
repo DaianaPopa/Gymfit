@@ -1,5 +1,6 @@
 <?php
-
+require("Models/MemberModel.php");
+//if you wann do trainers remove the ocnfig file from it and put it here so it doesnt include itself twice thx xxxxooxx :)
 class Login{
 
     public static function Login_Query()
