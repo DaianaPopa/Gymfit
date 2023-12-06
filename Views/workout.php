@@ -8,6 +8,7 @@
     <link
       rel="stylesheet"
       href="../CSS/homepage.css"
+      href="../CSS/main.css"
     />
 
   </head>
@@ -89,7 +90,7 @@
 </section>
 
 <?php
-include("../Controllers/footer.php");
+include("../includes/footer.php");
 ?>
 </body>
 </html>
