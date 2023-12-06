@@ -21,11 +21,34 @@ $_SESSION['member_Id'] = 1;
     <div id="back-image"></div>
     <h1 class="title">Todays Macro Goal</h1>
     <div class"sep-bar"></div>
-    <p>Goal Information</p>
+    <div></div>
     <div class="sep-bar"></div>
     <a href="#" id="new-goal">Set a New Goal ▼</a>
-    <div id="newGoal-container">
-        <form action=""></form>
+            <div class="top-bar">
+                <span class="divider-full"></span>
+            </div>
+            <form method="POST" class="form">
+                <div>
+                    <label for="calories">Calories:</label>
+                    <input type="text" name="email">
+                </div>
+                <div>
+                    <label for="protein">Protein:</label>
+                    <input type="text" name="password">
+                </div>
+                <div>
+                    <label for="calories">Carbs:</label>
+                    <input type="text" name="email">
+                </div>
+                <div>
+                    <label for="protein">Fat:</label>
+                    <input type="text" name="password">
+                </div>
+                <div>
+                    <button type="submit" class="button">Set Goal</button>
+                </div>
+                <div class="sep-bar"></div>
+            </form>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
