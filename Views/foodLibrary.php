@@ -148,7 +148,7 @@ style= "background-size: cover">
 </section>
 
 <?php
-include("../Controllers/footer.php");
+include("../includes/footer.php");
 ?>
 </body>
 </html>
