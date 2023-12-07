@@ -16,6 +16,7 @@ if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"])){
     <script src="JS/jquery.js"></script>
     <script src="JS/login-register.js"></script>
     <title>GymFit :: Home</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
     <div id="back-image"></div>

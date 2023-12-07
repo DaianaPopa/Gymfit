@@ -16,6 +16,7 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/main.css">
     <title>Gymfit :: Log a Macro</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
     <div id="back-image"></div>

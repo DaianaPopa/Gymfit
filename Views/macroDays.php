@@ -13,6 +13,7 @@ $_SESSION['member_Id'] = 1;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/main.css">
     <title>Gymfit :: Macros</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
     <div id="back-image"></div>
