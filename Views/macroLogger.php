@@ -20,6 +20,7 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
 <body>
     <div id="back-image"></div>
     <h1 class="title">Log Todays Macros</h1>
+    <a href="../Views/macroDays.php" class="backlink">Back To Macro Tracker</a>
     <div class="sep-bar"></div>
             <form method="POST" class="form">
                 <div>

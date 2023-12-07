@@ -18,24 +18,24 @@
         <form action="thankyou.php" method="post">
           <div>
             <!-- <label for="firstname">First name</label> -->
-            <input type="text" name="firstname" id="firstname" placeholder="First Name"/>
+            <input type="text" name="firstname" id="firstname" class="workout-input" placeholder="First Name"/>
           </div>
           <div>
             <!-- <label for="surname">Surname</label> -->
-            <input type="text" name="surname" id="surname" placeholder="Surname"/>
+            <input type="text" name="surname" id="surname" class="workout-input" placeholder="Surname"/>
           </div>
           <div>
             <!-- <label for="Email">Email</label> -->
-            <input type="email" name="Email" id="Email" placeholder="Email" required />
+            <input type="email" name="Email" id="Email" class="workout-input" placeholder="Email" required />
           </div>
           <div>
             <!-- <label for="Tel">Contact Telephone</label> -->
-            <input type="tel" name="Tel" id="Tel" placeholder="Telephone" required />
+            <input type="tel" name="Tel" id="Tel" class="workout-input" placeholder="Telephone" required />
           </div>
           <label for="Message">Message:</label>
           <div>
             
-            <input type="message" name="Message" id="Message" palceholder="Messages"/>
+            <input type="message" name="Message" id="Message" class="workout-input" palceholder="Messages"/>
           </div>
           <label for="marketing">Subject:</label>
           <div>

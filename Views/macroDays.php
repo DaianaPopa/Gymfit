@@ -17,6 +17,7 @@ $_SESSION['member_Id'] = 1;
 <body>
     <div id="back-image"></div>
     <h1 class="title">Macro Tracker</h1>
+    <a href="../Views/home.php" class="backlink">Home</a>
     <div class="macro-header">
         <a href="../Views/macroLogger.php">Log a Macro</a>
         <a href="../Views/macroGoal.php">See Daily Goal</a>

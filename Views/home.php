@@ -1,5 +1,4 @@
 <?php
-require_once("../Controllers/controller.php");
 /* Code to redirect to login page if this is accessed without login, commented out for development
 if ($_SESSION["Login-State"] == false){
     header("location: index.php");
