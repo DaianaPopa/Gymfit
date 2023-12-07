@@ -3,8 +3,7 @@ include("ConfigModel.php");
 class Macros{
     public static function Create_Macro_Day($ID,$protein,$carbs,$fat,$calories){
         $conn = Config :: Db_Connect();
-        $date = date('Y.m.d');
-        $sql = "INSERT INTO macro_achieved(Member_ID,Protein,Carbs,Fat,Calories) values($ID,$protein,$carbs,$fat,$calories)";
+        $sql = "INSERT INTO macro_achieved(Member_ID,Protein,Carb,Fat,Calories) values($ID,$protein,$carbs,$fat,$calories)";
         $conn->query($sql);
     }
 
