@@ -12,10 +12,11 @@ if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"])){
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/homepage.css">
+    <link rel="stylesheet" href="CSS/login.css">
     <script src="JS/jquery.js"></script>
     <script src="JS/login-register.js"></script>
     <title>GymFit :: Home</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
     <div id="back-image"></div>
@@ -39,11 +40,11 @@ if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"])){
             <form method="POST" class="form">
                 <div>
                     <label for="email">Email:</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" class="login-input">
                 </div>
                 <div>
                     <label for="password">Password:</label>
-                    <input type="text" name="password">
+                    <input type="text" name="password" class="login-input">
                 </div>
                 <div>
                     <button type="submit" class="button">Login</button>
@@ -65,11 +66,11 @@ if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"])){
                     </div>
                     <div>
                         <label for="emailReg">Email:</label>
-                        <input type="text" name="emailReg">
+                        <input type="text" name="emailReg" class="login-input">
                     </div>
                     <div>
                         <label for="passwordReg">Password:</label>
-                        <input type="text" name="passwordReg">
+                        <input type="text" name="passwordReg" class="login-input">
                     </div>
                     <div>
                         <button type="submit" class="button">Register</button>

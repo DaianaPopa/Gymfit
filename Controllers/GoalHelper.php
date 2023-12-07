@@ -7,10 +7,10 @@ class Goal_Helper{
             echo "<p>"."No Goal Set Yet"."<p>";
         }
         else{
-            echo "<p>" . "Calories: ". $result["Calories"]. "<p>"."<br>".
-                "<p>"."Protein: ". $result["Protein"] . "<p>"."<br>".
-                "<p>"."Fat: ". $result["Fat"]."<p>"."<br>".
-                "<p>". "Carbs: ". $result["Carbs"]. "<p>";
+            echo "<p class = 'macro-item'>" . "<span class='bold'>Calories:</span> ". $result["Calories"]. "<p>"."<br>".
+                "<p class = 'macro-item'>"."<span class='bold'>Protein:</span> ". $result["Protein"] . "<p>"."<br>".
+                "<p class = 'macro-item'>"."<span class='bold'>Fat:</span> ". $result["Fat"]."<p>"."<br>".
+                "<p class = 'macro-item'>". "<span class='bold'>Carbs:</span> ". $result["Carbs"]. "<p>";
         }
     }
 

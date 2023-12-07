@@ -16,19 +16,13 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/main.css">
     <title>Gymfit :: Log a Macro</title>
-    <link
-      rel="stylesheet"
-      href="../CSS/homepage.css"
-    />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
     <div id="back-image"></div>
     <h1 class="title">Log Todays Macros</h1>
+    <a href="../Views/macroDays.php" class="backlink">Back To Macro Tracker</a>
     <div class="sep-bar"></div>
-    <a href="#" id="new-goal">Log Macro▼</a>
-            <div class="top-bar">
-                <span class="divider-full"></span>
-            </div>
             <form method="POST" class="form">
                 <div>
                     <label for="calories">Calories:</label>
@@ -49,8 +43,8 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
                 <div>
                     <button type="submit" class="button">Log</button>
                 </div>
-                <div class="sep-bar"></div>
             </form>
+            <div class="sep-bar"></div>
     </div>
     
 <?php

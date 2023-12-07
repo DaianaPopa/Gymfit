@@ -97,6 +97,7 @@ main{
 
 .panel-content{
     opacity: 0;
+    padding: 8px;
     will-change: margin-top;
     transition: all 700ms;
     transition-delay: 600ms;
@@ -104,7 +105,7 @@ main{
     text-align: center;
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -159,13 +160,14 @@ main{
     display: inline-block;
     font-size: 15px;
     height: 30px;
-    width: 80%;
     margin-bottom: 10px;
     background-color: rgba(219, 197, 208, 0.25);
     color: whitesmoke;
     border-radius: 12px;
     border: 0.5px solid grey;
-    padding-left: 5px;
+}
+.login-input{
+    width: 70%;
 }
 .form div{
     width: 100%;
@@ -309,14 +311,8 @@ main{
     width: 100%;
     height: auto;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="message"],
-textarea {
+.workout-input{
     width: 400px;
-    ;
 }
 
 input[type="submit"] {

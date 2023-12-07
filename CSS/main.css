@@ -24,6 +24,7 @@ html{
     margin-left: 5px;
 }
 .macro-header{
+    margin-top: 10px;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -45,6 +46,12 @@ html{
     text-decoration: none;
     font-weight: 700;
     text-align: center;
+}
+.backlink{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    margin: auto;
 }
 /* footer*/
 
@@ -82,4 +89,71 @@ footer>nav>menu>li>a {
 }
 footer>div {
     text-align: center;
+}
+.button{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    width: 50%;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    padding-bottom:5px;
+}
+.form label{
+    display: block;
+}
+.form input{
+    display: inline-block;
+    font-size: 15px;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: rgba(219, 197, 208, 0.25);
+    color: whitesmoke;
+    border-radius: 12px;
+    border: 0.5px solid grey;
+    padding-left: 5px;
+}
+.form div{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.form .button{
+    margin-top: 10px;
+    width: auto;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
+#macro-grid{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.macro-item{
+    margin: 0 10px 0 10px;
+    display: block;
+    flex-basis: 40%;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    width: auto;
+    padding: 5px 0 5px 0;
+
+}
+.bold{
+    font-weight: 700;
 }

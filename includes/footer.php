@@ -1,14 +1,25 @@
-<div class="footerContainer">
-<footer>
-      <nav>
-        <menu>
-          <li><a href="#">Policy</a></li>
-          <li><a href="#">Health&Safety</a></li>
-          <li><a href="#">ABoutUs</a></li>
-          <li><a href="#">Terms&Condition</a></li>
-         </menu>
-      </nav>
-      <div>&copy;
+<div class="footer">
+  <img
+  src="images/GymLogo.jpg"
+  width="100"
+  height="100"
+/>
+  <div class="col-1"></div>
+
+<div class="col-2">
+  <h3>Newsletter</h3>
+  <form>
+    <input type="email" placeholder="Your Email Address" required>
+<br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<div class="col-3">
+<p>153 Arundel St,  </p>
+ <p>Sheffield City Centre,</p> 
+ <p>Sheffield S1 2NU</p>
+</div>
 <?php 
 echo date('Y'); 
 ?> 
