@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymFit :: FoodLibrary</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link
+      rel="stylesheet"
+      href="../CSS/login.css"
+      href="../CSS/main.css"
+    />
 </head>
 <body background = "../Docs/foodLibrary.jpg" 
 style= "background-size: cover">
