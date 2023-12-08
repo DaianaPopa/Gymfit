@@ -153,8 +153,8 @@ style= "background-size: cover">
   </div>
 </section>
 
-<?php
-include("../includes/footer.php");
-?>
+//<?php
+//include("../includes/footer.php");
+//?>
 </body>
 </html>
