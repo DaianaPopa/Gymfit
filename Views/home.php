@@ -13,7 +13,7 @@ if ($_SESSION["Login-State"] == false){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>GymFit :: Home</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-fmGlAWLI3Go9un1WX2Ut5vleFxSqyF6+RsTID0Cwj2P4M//pBuPvZP9tmIhOZsjcRdbjN4JQTmzXppGQV9wqGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,14 +21,16 @@ if ($_SESSION["Login-State"] == false){
     <link
       rel="stylesheet"
       href="../CSS/home.css"
-
     />
-    <script src="../js/menu.js" ></script>
+    
+    
 </head>
 <body>
 <?php
 include("../includes/header.php");
 ?>
+
+<div class ="box">
 <div id="bg-image"></div>
 <div class="bg-text">
   <h2>Welcome To</h2>
@@ -37,7 +39,8 @@ include("../includes/header.php");
   <p>Thank you for joining our gym</p>
 </div>
 </div>
-    <?php
+
+<?php
 include("../includes/footer.php");
 ?>
 </body>
