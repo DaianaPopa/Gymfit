@@ -11,8 +11,17 @@
       href="../CSS/login.css"
       href="../CSS/main.css"
     />
+   <link
+      rel="stylesheet"
+      href="../CSS/home.css"
+    />
 </head>
 <body>
+ 
+<?php
+include("../includes/header.php");
+?>
+
  <div id="back-image"></div>
 <div class="mainContainer">
   <main>
@@ -40,12 +49,10 @@
           </div>
           <label for="Message">Message:</label>
           <div>
-            
             <input type="message" name="Message" id="Message" class="workout-input" palceholder="Messages"/>
           </div>
           <label for="marketing">Subject:</label>
           <div>
-            
             <select name="marketing" id="marketing">
                 <option value="Other">Other</option>
               <option value="Have an Inquiry">Have an Inquiry</option>
@@ -53,9 +60,9 @@
               <option value="Report a Problem">Report a Problem</option>
             </select>
           </div>
-          <div>
+         <div>
             <button class="btn btn-2" type="submit" value="Send" class="sendButton">Submit</button>
-          </div>
+         </div>
         </form>
         </div>
 <div class="sideBar">
@@ -63,15 +70,12 @@
         <p> Sheffield, South Yorkshire, UK</p>
         <p>Tel:(44) 22445050</p>
         <p>Email: info@gymfit.com</p>
+        <br>
        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d76149.78157292848!2d-1.4846933!3d53.3847628!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48790aa9fae8be15%3A0x3e2827f5af06b078!2sSheffield!5e0!3m2!1sen!2suk!4v1701258233592!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       </section>
   </main>
 </div>
-
-//<?php
-//include("../includes/footer.php");
-//?>
 
 </body>
 </html>
