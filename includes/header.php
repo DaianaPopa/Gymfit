@@ -3,16 +3,17 @@
     
       <div class="topnav">
         <img
-        src="images/GymLogo.jpg"
+        src="../Docs/logo2.jpg"
         width="50"
         height="50"
       />
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#about">About Us</a>
-          <a href="#macro">Macro Tracker</a>
-          <a href="ourTrainers.html">Our Trainers</a>
-          <a href="#workout">Work Out Planner</a>
+          <a href="../Views/home.php">Home</a>
+          <a href="../Views/aboutUs.php">About Us</a>
+          <a href="../Views/macroDays.php">Macro Tracker</a>
+          <a href="../Views/ourTrainers.php">Our Trainers</a>
+          <a href="../Views/workout.php">Work Out Planner</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -20,3 +21,4 @@
         </a>
       </div>
   </div>
+<script src="../js/menu.js" ></script>
