@@ -10,12 +10,25 @@
       href="../CSS/login.css"
       href="../CSS/main.css"
     />
+     <link
+      rel="stylesheet"
+      href="../CSS/home.css"
+    />
 </head>
+    
+ <?php
+include("../includes/header.php");
+?>
+
 <body background = "../Docs/foodLibrary.jpg" 
 style= "background-size: cover">
 
 <h1 class="title">Food Library</h1>
-<h5><p>Look Great Feel Great</p></h5>
+<br>
+<h5><p>Look Great Feel Great
+ <br>
+<a href="../Views/macroGoal.php">See Daily Goal</a>
+</p></h5>
 <section class="intro">
   <div class="bg-image h-100;">
     <div class="mask d-flex align-items-center h-100">
@@ -153,8 +166,5 @@ style= "background-size: cover">
   </div>
 </section>
 
-//<?php
-//include("../includes/footer.php");
-//?>
 </body>
 </html>
