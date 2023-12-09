@@ -1,6 +1,6 @@
 <div class="footer">
   <img
-  src="images/GymLogo.jpg"
+  src="../Docs/logo2.jpg"
   width="100"
   height="100"
 />
@@ -19,6 +19,7 @@
 <p>153 Arundel St,  </p>
  <p>Sheffield City Centre,</p> 
  <p>Sheffield S1 2NU</p>
+   <a href="../Views/contactUs.php">Contact Us</a>
 </div>
 <?php 
 echo date('Y'); 
