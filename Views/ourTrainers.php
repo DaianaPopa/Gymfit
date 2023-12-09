@@ -15,7 +15,7 @@
 <?php
 include("../includes/header.php");
 ?>
-<body background = "../Docs/cover2.jpg" 
+<body background = "../Docs/cover3.jpg" 
 style= "background-size: cover">
 
   
