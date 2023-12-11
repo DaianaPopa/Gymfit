@@ -157,3 +157,50 @@ footer>div {
 .bold{
     font-weight: 700;
 }
+
+#ourTrainers-back{
+    background: url('https://img.freepik.com/premium-photo/dark-gym-with-barbells-weights-floor_899870-20207.jpg');
+    opacity: 25%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border: 0;
+    margin: 0;
+    z-index: -1;
+    box-shadow: 25px 25px 50px 0 black inset, -25px -25px 50px 0 black inset;
+}
+.ourTrainers-header{
+    margin-left: 5px;
+}
+.ourTrainers-header p{
+    font-style: italic;
+}
+.user-item{
+    border: 1px solid whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.user-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.user-top > button{
+    background: none;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+}
+.user-sep{
+    border: 1px solid whitesmoke;
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+.user-item p{
+    margin-top: 15px;
+}
+
