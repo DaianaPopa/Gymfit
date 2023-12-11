@@ -2,6 +2,7 @@
 session_start();
 include 'Controllers/LoginHelper.php';
 include 'Controllers/registrationHelper.php';
+// pls dont use on uni wifi as it rejects the database 
 
 if (isset($_POST["email"]) && isset($_POST["password"])){
     Login :: Login_Query();
