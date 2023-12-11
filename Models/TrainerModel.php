@@ -37,6 +37,20 @@ class Gym_Trainer{
         $result = $conn->query($sql);
         return $UserID["Trainer_ID"];
     }
+
+    public static function Get_Trainers(){
+        $conn = Config :: Db_Connect();
+        $sql = "SELECT * from Trainers";
+        $result = $conn->query($sql);
+        return $result;
+    }
+
+    public static function Get_Trainer_ID_By_Email_Name($email,$firstname,$lastname){
+        $conn = Config :: Db_Connect();
+        $sql = "SELECT Trainer_ID from trainer Where Email = '$email' AND Where Firstname = '$firstname' and where Lastname = '$Lastname'";
+        $result = $conn->query($sql);
+        return $UserID["Trainer_ID"];
+    }
 }
 
 ?>
