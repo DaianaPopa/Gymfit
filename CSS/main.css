@@ -203,4 +203,7 @@ footer>div {
 .user-item p{
     margin-top: 15px;
 }
+.user-item .user-email{
+    font-style: italic;
+}
 

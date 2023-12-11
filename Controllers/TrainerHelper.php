@@ -4,13 +4,18 @@ class TrainerHelper{
     public static function Display_Trainers(){
         $result = Gym_Trainer :: Get_Trainers();
         if ($result->num_rows > 0) {
-            echo "<table><tr><th>ID</th><th>Firstname</th><th>Lastname</th><th>Email</th></tr>";
             while($row = $result->fetch_assoc()) {
-              echo "<tr><td>".$row["Trainer_ID"]."</td><td>".$row["Firstname"]." ".$row["Password"]."</td><td>".$row["Email"]."</td></tr>";
+              echo "<div class='user-item'>";
+              echo "<div class='user-top'>";
+              echo "<h3>".$row['firstname']."</h3>";
+              echo "<button>Apply To Programme >></button>";
+              echo "</div>";
+              echo "<p class='user-email'>".$row['email']."</p>";
+              echo "<div class='user-sep'></div>";
+              echo "<p>".$row['description']."<p>";
+              echo "</div>";
             }
-            echo "</table>";
           } else {
-            echo "0 results";
           }
     }
 }
