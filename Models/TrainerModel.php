@@ -51,6 +51,13 @@ class Gym_Trainer{
         $result = $conn->query($sql);
         return $UserID["Trainer_ID"];
     }
+
+    public static function Get_Members_By_Trainer_ID($id){
+        $conn = Config :: Db_Connect();
+        $sql = "SELECT * from Gym_Member where Trainer_ID = '$id'";
+        $result = $conn->query($sql);
+        return $result;
+    }
 }
 
 ?>
