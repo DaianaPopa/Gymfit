@@ -229,6 +229,11 @@ main{
     margin: 150px;
     padding: 20px;
 } 
+#name-entry{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
 
 
 /*workout*/

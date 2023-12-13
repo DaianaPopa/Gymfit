@@ -7,8 +7,9 @@ include 'Controllers/registrationHelper.php';
 if (isset($_POST["email"]) && isset($_POST["password"])){
     Login :: Login_Query();
 }
-if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"])){
+if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"]) && isset($_POST["firstnameReg"]) && isset($_POST["surnameReg"])){
     Register :: Register_Query();
+    //Need to update the controller & model for this, will be done soon (ish)
 }
 ?>
     <meta charset="UTF-8">
@@ -64,6 +65,16 @@ if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"])){
                     <div id="reg-toggle">
                         <label class="slider"><input type="checkbox" name="memberReg" id="member">Member</label>
                         <label class="slider"><input type="checkbox" name="trainerReg" id="trainer">Trainer</label>
+                    </div>
+                    <div id="name-entry">
+                        <div>
+                            <label for="firstnameReg">Firstname:</label>
+                            <input type="text" name="firstnameReg" class="login-input">
+                        </div>
+                        <div>
+                            <label for="surnameReg">Surname:</label>
+                            <input type="text" name="surnameReg" class="login-input">
+                        </div>
                     </div>
                     <div>
                         <label for="emailReg">Email:</label>
