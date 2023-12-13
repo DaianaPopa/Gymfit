@@ -1,14 +1,13 @@
 <?php
 
-class TrainerHelper{
-    public static function Display_Trainers(){
-        $result = Gym_Trainer :: Get_Trainers();
+class MemberHelper{
+    public static function Display_Members(){
+        $result = Gym_Trainer :: Get_Members_By_Trainer_ID($id); //Use session ID for trainer
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
               echo "<div class='user-item'>";
               echo "<div class='user-top'>";
               echo "<h3>".$row['firstname']."</h3>";
-              echo "<button>Apply To Programme >></button>";
               echo "</div>";
               echo "<p class='user-email'>".$row['email']."</p>";
               echo "<div class='user-sep'></div>";
@@ -16,9 +15,8 @@ class TrainerHelper{
               echo "</div>";
             }
           } else {
-            echo "<h2>There are currently no trainers or programmes avaliable, check back later.</h2>";
+            echo "<h2>You currently have no members on your programme</h2>";
           }
     }
 }
-
 ?>

@@ -170,7 +170,7 @@ form button{
 body{
   margin: 0;
   padding: 0;
-     display: flex;
+  display: flex;
   flex-direction: column;
   width: auto;
   height: 99%;
@@ -185,4 +185,18 @@ body{
 }
 #myLinks.links-hidden {
   display: none;
+}
+table { 
+  width: 50%; 
+  border-collapse: collapse; 
+}
+th { 
+  background: #070B1E; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
 }

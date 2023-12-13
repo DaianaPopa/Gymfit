@@ -19,14 +19,10 @@
   </div>
   <div class="sep-bar"></div>
   <div class="display-user-grid">
-    <div class="user-item">
-      <div class="user-top">
-        <h3>Trainer Name</h3>
-        <button>Apply To Programme >></button>
-      </div>
-      <div class="user-sep"></div>
-      <p>This is information beboop beebop.</p>
-    </div>
+    <?php 
+    include("../Controllers/TrainersHelper.php");
+    TrainerHelper :: Display_Trainers();
+    ?>
   </div>
 </body>
 </html>
