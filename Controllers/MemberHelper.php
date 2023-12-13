@@ -1,7 +1,7 @@
 <?php
 
 class MemberHelper{
-    public static function Display_Members(){
+    public static function Display_Members($id){
         $result = Gym_Trainer :: Get_Members_By_Trainer_ID($id); //Use session ID for trainer
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
