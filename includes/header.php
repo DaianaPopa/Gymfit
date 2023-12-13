@@ -9,11 +9,11 @@
       />
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="../Views/home.php">Home</a>
-          <a href="../Views/aboutUs.php">About Us</a>
-          <a href="../Views/macroDays.php">Macro Tracker</a>
-          <a href="../Views/ourTrainers.php">Our Trainers</a>
-          <a href="../Views/workout.php">Work Out Planner</a>
+          <a href="#about">About Us</a>
+          <a href="macroDays.php">Macro Tracker</a>
+          <a href="ourTrainers.php">Our Trainers</a>
+          <a href="#workout">Work Out Planner</a>
+          <a href="#workout">Sign Out</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -21,4 +21,3 @@
         </a>
       </div>
   </div>
-<script src="../js/menu.js" ></script>
