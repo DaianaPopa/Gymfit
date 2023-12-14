@@ -9,7 +9,6 @@ if (isset($_POST["email"]) && isset($_POST["password"])){
 }
 if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"]) && isset($_POST["firstnameReg"]) && isset($_POST["surnameReg"])){
     Register :: Register_Query();
-    //Need to update the controller & model for this, will be done soon (ish)
 }
 ?>
     <meta charset="UTF-8">

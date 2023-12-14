@@ -1,5 +1,10 @@
 <?php
-$_SESSION["User="]
+/* Code to redirect to login page if this is accessed without login, commented out for development
+if ($_SESSION["Login-State"] == false){
+    header("location: index.php");
+}
+*/
+//Load data within this page using a db query, with $_SESSION["UserID"] as a parameter
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +25,17 @@ $_SESSION["User="]
     
 </head>
 <body>
+  //Include will change based on the session wide variable after login
 <?php
-include("../includes/header.php");
+if ($_SESSION["User-Type"] == "Member"){
+  include("../includes/header.php");
+}
+else if ($_SESSION["User-Type"] == "Trainer"){
+  include("../includes/trainerHeader.php");
+}
+else{
+  include("../includes/header.php"); //Temporary for development
+}
 ?>
 
 <div class ="box">
