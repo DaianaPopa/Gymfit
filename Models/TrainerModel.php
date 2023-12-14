@@ -1,9 +1,9 @@
 <?php
 class Gym_Trainer{
-    public static function Create_Trainer($email,$password){
+    public static function Create_Trainer($email,$password, $firstname, $surname){
         $conn = Config :: Db_Connect();
-        $sql = "INSERT INTO trainer(Email, Trainer_Password)
-        Values($email, $password)";
+        $sql = "INSERT INTO trainer(Email, Trainer_Password, Firstname, Surname)
+        Values('$email', '$password', '$firstname', '$surname')";
         $conn->query($sql);
     }
 
@@ -33,7 +33,7 @@ class Gym_Trainer{
 
     public static function Get_Trainer_ID_By_Email_Passsword($email,$password){
         $conn = Config :: Db_Connect();
-        $sql = "SELECT Trainer_ID from trainer Where Email = '$email' AND Where Trainer_Password = '$password'";
+        $sql = "SELECT Trainer_ID from trainer Where Email = '$email' AND Trainer_Password = '$password'";
         $result = $conn->query($sql);
         return $UserID["Trainer_ID"];
     }
@@ -47,7 +47,7 @@ class Gym_Trainer{
 
     public static function Get_Trainer_ID_By_Email_Name($email,$firstname,$lastname){
         $conn = Config :: Db_Connect();
-        $sql = "SELECT Trainer_ID from trainer Where Email = '$email' AND Where Firstname = '$firstname' and where Lastname = '$Lastname'";
+        $sql = "SELECT Trainer_ID from trainer Where Email = '$email' AND Where Firstname = '$firstname' and where Lastname = '$lastname'";
         $result = $conn->query($sql);
         return $UserID["Trainer_ID"];
     }

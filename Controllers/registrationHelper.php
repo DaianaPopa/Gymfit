@@ -8,6 +8,8 @@ Class Register
     {
         $emailReg = $_POST["emailReg"];
         $passwordReg = $_POST["passwordReg"];
+        $firstname = $_POST["firstnameReg"];
+        $surname = $_POST["surnameReg"];
         //Checking for Member Checkbox Seleted
         if(isset($_POST["memberReg"]))
         {
@@ -15,7 +17,7 @@ Class Register
             {
                 //Report Error Message for account already existing
             }
-            Register :: Register_Member($emailReg, $passwordReg);
+            Register :: Register_Member($emailReg, $passwordReg, $firstname, $surname);
         }
         //Checking for Trainer Checkbox Seleted
         if(isset($_POST["trainerReg"]))
@@ -24,19 +26,19 @@ Class Register
             {
                 //Report Error Message for account already existing
             }
-            Register :: Register_Trainer($emailReg, $passwordReg);
+            Register :: Register_Trainer($emailReg, $passwordReg, $firstname, $surname);
         }
     }
 
     //Both automatically sign in using the newly created account
-    public static function Register_Member($emailReg, $passwordReg)
+    public static function Register_Member($emailReg, $passwordReg, $firstname, $surname)
     {
-        Gym_Member :: Create_Member($emailReg, $passwordReg);
+        Gym_Member :: Create_Member($emailReg, $passwordReg, $firstname, $surname);
         Login :: Login_Member($emailReg, $passwordReg);
     }
-    public static function Register_Trainer($emailReg, $passwordReg)
+    public static function Register_Trainer($emailReg, $passwordReg, $firstname, $surname)
     {
-        Gym_Trainer :: Create_Trainer($emailReg, $passwordReg);
+        Gym_Trainer :: Create_Trainer($emailReg, $passwordReg, $firstname, $surname);
         Login :: Login_Trainer($emailReg, $passwordReg);
     }
 }

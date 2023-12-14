@@ -28,7 +28,7 @@ class Login{
         echo Gym_Member :: Get_Password_By_Email($email);
         if ($password == Gym_Member :: Get_Password_By_Email($email))
         {
-            //$_SESSION["UserID"] = Gym_Member :: Get_Member_ID_By_Email_Passsword($email,$password);
+            $_SESSION["UserID"] = Gym_Member :: Get_Member_ID_By_Email_Passsword($email,$password);
             $_SESSION["Login-State"] = true;
             $_SESSION["user-type"] = "Member";
             Login :: Login_Success();

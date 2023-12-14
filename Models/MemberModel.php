@@ -1,10 +1,10 @@
 <?php
 class Gym_Member{
     
-    public static function Create_Member($email,$password){
+    public static function Create_Member($email,$password, $firstname, $surname){
         //THis function creates a new member call it with Gym_Member :: Create_Member
         $conn = Config :: Db_Connect();
-        $sql = "INSERT INTO gym_member(Email, Member_Password)Values($email, $password)";
+        $sql = "INSERT INTO gym_member(Email, Member_Password, Firstname, Surname)Values('$email', '$password', '$firstname', '$surname')";
         $conn->query($sql);
     }
 
@@ -17,7 +17,6 @@ class Gym_Member{
             return "none";
         }
         $password = $result->fetch_assoc();
-        return $password["Member_Password"];
         return $password["Member_Password"];
     } 
 
