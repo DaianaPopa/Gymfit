@@ -25,7 +25,7 @@ if ($_SESSION["Login-State"] == false){
     
 </head>
 <body>
-  //Include will change based on the session wide variable after login
+  Include will change based on the session wide variable after login
 <?php
 if ($_SESSION["User-Type"] == "Member"){
   include("../includes/header.php");

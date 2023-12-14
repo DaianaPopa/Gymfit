@@ -35,13 +35,23 @@ class Gym_Member{
             return true;
         }
     }
-
     public static function Get_Member_ID_By_Email_Passsword($email,$password){
         $conn = Config :: Db_Connect();
         $sql = "SELECT Member_ID from Gym_Member Where Email = '$email' AND Member_Password = '$password'";
         
         $result = $conn->query($sql);
         return $UserID["Member_ID"];
+    }
+    public static function Get_Trainer_By_Member_ID($id){
+        $conn = Config :: Db_Connect();
+        $sql = "SELECT Trainer_ID from Gym_Member Where Member_ID = '$id'";
+        
+        $result = $conn->query($sql);
+        if ($result->num_rows < 0){
+            return "none";
+        }
+        $TrainerID = $result->fetch_assoc();
+        return $TrainerID["Trainer_ID"];
     }
 }
 ?>

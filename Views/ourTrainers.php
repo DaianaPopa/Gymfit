@@ -20,8 +20,8 @@
   <div class="sep-bar"></div>
   <div class="display-user-grid">
     <?php 
-    include("../Controllers/TrainersHelper.php");
-    TrainerHelper :: Display_Trainers();
+    include("Controllers/TrainersHelper.php");
+    TrainerHelper :: Display_Trainers($_SESSION[1]);
     ?>
   </div>
 </body>

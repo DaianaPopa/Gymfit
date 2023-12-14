@@ -188,7 +188,7 @@ footer>div {
     justify-content: space-between;
     text-align: center;
 }
-.user-top > button{
+.user-top > form > button{
     background: none;
     border: 1px solid whitesmoke;
     border-radius: 5px;

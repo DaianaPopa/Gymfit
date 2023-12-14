@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +15,7 @@
   <div class="display-user-grid">
     <?php 
     include("../Controllers/TrainersHelper.php");
-    MemberHelper :: Display_Members(); //Take the trainers session ID as parameter to be able to display
+    MemberHelper :: Display_Members($_SESSION["User-ID"]); //Take the trainers session ID as parameter to be able to display
     ?>
   </div>
 </body>

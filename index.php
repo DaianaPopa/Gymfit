@@ -45,7 +45,7 @@ if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"]) && isset($_POST["f
                 </div>
                 <div>
                     <label for="password">Password:</label>
-                    <input type="text" name="password" class="login-input">
+                    <input type="password" name="password" class="login-input" autocomplete="off">
                 </div>
                 <div>
                     <button type="submit" class="button">Login</button>
@@ -81,7 +81,7 @@ if (isset($_POST["emailReg"]) && isset($_POST["passwordReg"]) && isset($_POST["f
                     </div>
                     <div>
                         <label for="passwordReg">Password:</label>
-                        <input type="text" name="passwordReg" class="login-input">
+                        <input type="password" name="passwordReg" class="login-input" autocomplete="off">
                     </div>
                     <div>
                         <button type="submit" class="button">Register</button>
