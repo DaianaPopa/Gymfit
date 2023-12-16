@@ -1,5 +1,4 @@
 <?php
-include("ConfigModel.php");
 class Macro_Goals{
     public static function Create_Goal($ID,$protein,$carbs,$fat,$calories){
         $conn = Config :: Db_Connect();

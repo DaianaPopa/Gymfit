@@ -1,4 +1,5 @@
 <?php
+require("../CONFIG/views_include_config.php");
 /* Code to redirect to login page if this is accessed without login, commented out for development
 if ($_SESSION["Login-State"] == false){
     header("location: index.php");
@@ -25,12 +26,11 @@ if ($_SESSION["Login-State"] == false){
     
 </head>
 <body>
-  Include will change based on the session wide variable after login
 <?php
-if ($_SESSION["User-Type"] == "Member"){
+if ($_SESSION["user-type"] == "Member"){
   include("../includes/header.php");
 }
-else if ($_SESSION["User-Type"] == "Trainer"){
+else if ($_SESSION["user-type"] == "Trainer"){
   include("../includes/trainerHeader.php");
 }
 else{

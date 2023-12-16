@@ -1,3 +1,4 @@
+<?php require("../CONFIG/views_include_config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

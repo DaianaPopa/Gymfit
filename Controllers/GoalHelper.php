@@ -1,5 +1,4 @@
 <?php
-include("../Models/GoalModel.php");
 class Goal_Helper{
     public static function Display_Goal($ID){
         $result = Macro_Goals :: Get_Goal($ID);

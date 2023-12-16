@@ -1,5 +1,4 @@
 <?php
-include("ConfigModel.php");
 class Macros{
     public static function Create_Macro_Day($ID,$protein,$carbs,$fat,$calories){
         $conn = Config :: Db_Connect();

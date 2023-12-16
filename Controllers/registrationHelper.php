@@ -1,7 +1,4 @@
 <?php
-
-include ("../Models/MemberModel.php");
-include ("../Models/TrainerModel.php");
 Class Register
 {
     public static function Register_Query()

@@ -1,3 +1,4 @@
+<?php require("../CONFIG/views_include_config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,8 +21,7 @@
   <div class="sep-bar"></div>
   <div class="display-user-grid">
     <?php 
-    include("Controllers/TrainersHelper.php");
-    TrainerHelper :: Display_Trainers($_SESSION[1]);
+    TrainerHelper :: Display_Trainers();
     ?>
   </div>
 </body>

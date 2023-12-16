@@ -40,7 +40,7 @@ class Gym_Trainer{
 
     public static function Get_Trainers(){
         $conn = Config :: Db_Connect();
-        $sql = "SELECT * from Trainers";
+        $sql = "SELECT * from trainer";
         $result = $conn->query($sql);
         return $result;
     }

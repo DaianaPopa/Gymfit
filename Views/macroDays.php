@@ -1,7 +1,6 @@
 
 <?php
-include '../Controllers/MacroHelper.php';
-
+require("../CONFIG/views_include_config.php");
 //skibi test data replace with the real shite when the gazorpazorp is ready to sqwaunch
 $_SESSION['member_Id'] = 1;
 ?>
@@ -33,7 +32,6 @@ $_SESSION['member_Id'] = 1;
 
     
 <?php
-//include("../Controllers/footer.php");
 ?>
 </body>
 </html>

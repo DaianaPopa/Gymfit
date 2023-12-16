@@ -1,3 +1,4 @@
+<?php require("../CONFIG/views_include_config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +14,7 @@
   </div>
   <div class="sep-bar"></div>
   <div class="display-user-grid">
-    <?php 
-    include("../Controllers/TrainersHelper.php");
+    <?php
     MemberHelper :: Display_Members($_SESSION["User-ID"]); //Take the trainers session ID as parameter to be able to display
     ?>
   </div>

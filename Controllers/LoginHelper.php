@@ -1,7 +1,4 @@
 <?php
-require("Models/ConfigModel.php");
-require("Models/MemberModel.php");
-require("Models/TrainerModel.php");
 //if you wann do trainers remove the ocnfig file from it and put it here so it doesnt include itself twice thx xxxxooxx :)
 class Login{
 

@@ -1,6 +1,4 @@
 <?php
-require("../Models/Config.php");
-require("../Models/MacroModel.php");
 class Macro_Helper{
 
     public static function Log_New_Day($ID,$protein,$carbs,$calories,$fat){
