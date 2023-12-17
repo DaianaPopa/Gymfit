@@ -1,4 +1,8 @@
-<?php require("../CONFIG/views_include_config.php"); ?>
+<?php require("../CONFIG/views_include_config.php");
+if (isset($_SESSION["UserID"]) && isset($_POST["trainerIdToSet"])){
+  Gym_Member :: Set_Members_Trainer_By_ID($_SESSION["UserID"], $_POST["trainerIdToSet"]);
+  header("ourTrainers.php");
+ } ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

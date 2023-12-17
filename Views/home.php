@@ -35,6 +35,7 @@ else if ($_SESSION["user-type"] == "Trainer"){
 }
 else{
   include("../includes/header.php"); //Temporary for development
+  echo $_SESSION["UserID"];
 }
 ?>
 

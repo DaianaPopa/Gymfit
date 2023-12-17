@@ -20,13 +20,10 @@ class Login{
 
     public static function Login_Member($email, $password)
     {
-        echo $password;
-        echo $email;
-        echo Gym_Member :: Get_Password_By_Email($email);
         if ($password == Gym_Member :: Get_Password_By_Email($email))
         {
             $_SESSION["UserID"] = Gym_Member :: Get_Member_ID_By_Email_Passsword($email,$password);
-            $_SESSION["Login-State"] = true;
+            $_SESSION["login-state"] = true;
             $_SESSION["user-type"] = "Member";
             Login :: Login_Success();
         }
@@ -40,8 +37,8 @@ class Login{
         if ($password == Gym_Trainer :: Get_Password_By_Email($email))
         {
             $_SESSION["UserID"] = Gym_Trainer :: Get_Trainer_ID_By_Email_Passsword($email,$password);
-            $_SESSION["Login-State"] = true;
-            $_SESSION["User-Type"] = "Trainer";
+            $_SESSION["login-state"] = true;
+            $_SESSION["user-type"] = "Trainer";
             Login :: Login_Success();
         }
         //else

@@ -40,6 +40,7 @@ class Gym_Member{
         $sql = "SELECT Member_ID from Gym_Member Where Email = '$email' AND Member_Password = '$password'";
         
         $result = $conn->query($sql);
+        $UserID = $result->fetch_assoc();
         return $UserID["Member_ID"];
     }
     public static function Get_Trainer_By_Member_ID($id){
@@ -52,6 +53,10 @@ class Gym_Member{
         }
         $TrainerID = $result->fetch_assoc();
         return $TrainerID["Trainer_ID"];
+    }
+    public static function Set_Members_Trainer_By_ID($memberID, $trainerID){
+        $conn = Config :: Db_Connect();
+        $sql = "UPDATE Gym_Member SET Trainer_ID = '$trainerID' WHERE (Member_ID = '$memberID')";
     }
 }
 ?>

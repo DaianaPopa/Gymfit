@@ -2,7 +2,7 @@
 class TrainerHelper{
     public static function Display_Trainers(){
         $result = Gym_Trainer :: Get_Trainers();
-        $currentTrainer = Gym_Member :: Get_Trainer_By_Member_ID(1);
+        $currentTrainer = Gym_Member :: Get_Trainer_By_Member_ID($_SESSION["UserID"]);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
               echo "<div class='user-item'>";
