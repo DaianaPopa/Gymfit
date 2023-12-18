@@ -25,7 +25,7 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
     <h1 class="title">Todays Macro Goal</h1>
     <a href="../Views/macroDays.php" class="backlink">Back To Macro Tracker</a>
     <div class="sep-bar"></div>
-    <div id="macro-grid"><?php Goal_Helper :: Display_Goal($_SESSION['member_Id']);?></div>
+    <div class="macro-grid"><?php Goal_Helper :: Display_Goal($_SESSION['member_Id']);?></div>
     <div class="sep-bar"></div>
     <h2 id="new-goal">Set a New Goal</h2>
             <form method="POST" class="form">

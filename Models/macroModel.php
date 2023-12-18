@@ -8,7 +8,7 @@ class Macros{
 
     public static function Get_Macros($ID){
         $conn = Config :: Db_Connect();
-        $sql = "SELECT Calories, Protein, Carbs, Fat, Achieved from macro_achieved where Member_ID = $ID";
+        $sql = "SELECT Calories, Protein, Carb, Fat, Achieved from macro_achieved where Member_ID = $ID";
         $result = $conn->query($sql);
         return $result;
     }

@@ -7,9 +7,9 @@ class Goal_Helper{
         }
         else{
             echo "<p class = 'macro-item'>" . "<span class='bold'>Calories:</span> ". $result["Calories"]. "<p>"."<br>".
-                "<p class = 'macro-item'>"."<span class='bold'>Protein:</span> ". $result["Protein"] . "<p>"."<br>".
-                "<p class = 'macro-item'>"."<span class='bold'>Fat:</span> ". $result["Fat"]."<p>"."<br>".
-                "<p class = 'macro-item'>". "<span class='bold'>Carbs:</span> ". $result["Carbs"]. "<p>";
+                 "<p class = 'macro-item'>"."<span class='bold'>Protein:</span> ". $result["Protein"] . "<p>"."<br>".
+                 "<p class = 'macro-item'>"."<span class='bold'>Fat:</span> ". $result["Fat"]."<p>"."<br>".
+                 "<p class = 'macro-item'>". "<span class='bold'>Carbs:</span> ". $result["Carbs"]. "<p>";
         }
     }
 

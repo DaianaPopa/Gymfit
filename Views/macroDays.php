@@ -26,7 +26,7 @@ $_SESSION['member_Id'] = 1;
     <div>
         <h2 class ="title"> Days Logged: </h2>
         <div>
-        <?php Macro_Helper :: Display_Macros_Achieved($_SESSION['member_Id']) ?>;
+        <?php Macro_Helper :: Display_Macros_Achieved($_SESSION['member_Id']) ?>
         </div>
     </div>
 
