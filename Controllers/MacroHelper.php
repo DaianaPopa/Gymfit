@@ -11,7 +11,7 @@ class Macro_Helper{
         if ($result->num_rows > 0) {
             echo "<table><tr><th>Calories</th><th>Protein</th><th>Carbs</th><th>Fat</th><th>Date Achieved</th></tr>";
             while($row = $result->fetch_assoc()) {
-              echo "<tr><td>".$row["Calories"]."</td><td>".$row["Protein"]." ".$row["Carbs"]."</td><td>".$row["Fat"]."</td><td>".$row["Achieved"]."</td></tr>";
+              echo "<tr><td>".$row["Calories"]."</td><td>".$row["Protein"]." ".$row["Carb"]."</td><td>".$row["Fat"]."</td><td>".$row["Achieved"]."</td></tr>";
             }
             echo "</table>";
           } else {
