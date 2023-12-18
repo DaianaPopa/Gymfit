@@ -9,8 +9,13 @@ class TrainerHelper{
               echo "<div class='user-top'>";
               echo "<h3>".$row['Firstname']."</h3>";
               echo "<form action='ourTrainers.php' method='post'>";
-              echo "<input type='hidden' name='trainerIdToSet' value=".$row['Trainer_ID']."</input>";
-              echo "<button type='submit'>Apply To Programme >></button>";
+              echo "<input type='hidden' name='trainerIdToSet' value=".$row['Trainer_ID']. " </input>";
+              if ($currentTrainer == $row['Trainer_ID']){
+                echo "<h3>Applied To Programme.</h3>";
+              }
+              else{
+                echo "<button type='submit'>Apply To Programme >></button>";
+              }
               echo "</form>";
               echo "</div>";
               echo "<p class='user-email'>".$row['Email']."</p>";
