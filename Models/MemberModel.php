@@ -56,7 +56,8 @@ class Gym_Member{
     }
     public static function Set_Members_Trainer_By_ID($memberID, $trainerID){
         $conn = Config :: Db_Connect();
-        $sql = "UPDATE Gym_Member SET Trainer_ID = '$trainerID' WHERE (Member_ID = '$memberID')";
+        $sql = "UPDATE Gym_Member SET Trainer_ID = '$trainerID' WHERE Member_ID = '$memberID'";
+        $conn->query($sql);
     }
 }
 ?>
