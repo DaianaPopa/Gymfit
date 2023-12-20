@@ -6,7 +6,7 @@ class Workout{
         $conn->query($sql);
     }
     public static function Remove_Workout($workout_ID,$member_ID){
-        $conn = Congfig :: Db_Connect();
+        $conn = Config :: Db_Connect();
         $sql = "DELETE FROM workout where ID = '$workout_ID' and Member_ID = '$member_ID'";
         $conn->query($sql);
     }
