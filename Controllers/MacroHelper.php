@@ -30,5 +30,4 @@ class Macro_Helper{
         header("location: macroDays.php");
     }
 }
-
 ?>
