@@ -13,7 +13,7 @@ class Login{
         if (Gym_Trainer :: Check_Trainer_Exists_By_Email($email) == true)
         {
             Login :: Login_Trainer($email, $password);
-        } 
+        }
         //else
         //Provide Error Feedback for unrecognised email
     }
