@@ -16,8 +16,8 @@ class Workout_Helper{
 
     public static function Display_Workout($id, $day){
         $workouts = Workout :: Get_Workouts_By_Day($id, $day);
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
+        if ($workouts->num_rows > 0) {
+            while($row = $workouts->fetch_assoc()) {
                 echo '<div class="workout-item">
                       <form action="workout.php" method="post">
                       <input type="text" name="workoutID" value="'.$row['ID'].'">
