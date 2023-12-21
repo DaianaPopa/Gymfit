@@ -13,6 +13,7 @@ $_SESSION['member_Id'] = 1;
     <link rel="stylesheet" href="../CSS/main.css">
     <title>Gymfit :: Macros</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <script src="../JS/workout.js"></script>
 </head>
 <body>
     <div id="back-image"></div>

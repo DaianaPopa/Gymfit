@@ -18,7 +18,7 @@ class Workout{
 
     public static function Get_Workouts_By_Day($ID,$day){
         $conn = Config :: Db_Connect();
-        $sql = "SELECT ID,sets,reps,workout WHERE Member_ID = $ID and DOTW = '$day'";
+        $sql = "SELECT ID,sets,reps,workout from workout WHERE Member_ID = $ID and DOTW = '$day'";
         $result = $conn->query($sql);
         return $result->fetch_assoc();
     }

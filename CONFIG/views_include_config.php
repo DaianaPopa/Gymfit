@@ -17,4 +17,5 @@ include("../Controllers\MacroHelper.php");
 include("../Controllers\MemberHelper.php");
 include("../Controllers/registrationHelper.php");
 include("../Controllers\TrainerHelper.php");
+include("../Controllers\WorkoutHelper.php");
 ?>

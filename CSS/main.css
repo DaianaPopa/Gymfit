@@ -214,6 +214,45 @@ footer>div {
     margin-bottom: 20px;
     padding: 10px;
 }
-.macro-achieved-container > .macro-item{
 
+#workout-list{
+    padding-left: 0;
+}
+.workout-day{
+    list-style: none;
+    margin: 25px 0;
+}
+.workout-day-title{
+    text-decoration: underline;
+    text-align: center;
+}
+.workout-day-content{
+    text-align: left;
+}
+.workout-day-content h4{
+    margin-bottom: 0;
+}
+.workout-day-content p{
+    margin-top: 0;
+}
+.toggle-workout{
+    text-align: center;
+}
+.selected-day, .workout-item{
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+}
+.workout-item{
+    padding-left: 10px;
+}
+.remove-workout{
+    background-color: #00000000;
+    border: none;
+    display: block;
+    position: relative;
+    float: right;
+    color: red;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-top: 5px;
 }
