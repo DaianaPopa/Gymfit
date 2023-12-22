@@ -1,11 +1,7 @@
-
 <?php
 require("../CONFIG/views_include_config.php");
-//Authenticator :: Validate();
-//skibi test data replace with the real shite when the gazorpazorp is ready to sqwaunch
-$_SESSION['member_Id'] = 1;
+Authenticator :: Validate();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +24,7 @@ $_SESSION['member_Id'] = 1;
     <div>
         <h2 class ="title"> Days Logged: </h2>
         <div>
-        <?php Macro_Helper :: Display_Macros_Achieved($_SESSION['member_Id']) ?>
+        <?php Macro_Helper :: Display_Macros_Achieved($_SESSION['UserID']) ?>
         </div>
     </div>
 

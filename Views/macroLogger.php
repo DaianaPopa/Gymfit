@@ -1,11 +1,8 @@
 <?php
 require("../CONFIG/views_include_config.php");
-//Authenticator :: Validate();
-//skibi test data replace with the real shite when the gazorpazorp is ready to sqwaunch
-$_SESSION['member_Id'] = 1;
-
+Authenticator :: Validate();
 if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]) && isset($_POST["carbs"])){
-    Macro_Helper :: Log_New_Day($_SESSION['member_Id'],$_POST['protein'],$_POST['carbs'],$_POST['calories'],$_POST['fat']);
+    Macro_Helper :: Log_New_Day($_SESSION['UserID'],$_POST['protein'],$_POST['carbs'],$_POST['calories'],$_POST['fat']);
 }
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 require("../CONFIG/views_include_config.php");
-
+Authenticator :: Validate();
 if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]) && isset($_POST["carbs"])){
     Goal_Helper :: New_Goal($_SESSION['UserID'],$_POST['protein'],$_POST['carbs'],$_POST['calories'],$_POST['fat']);
 }

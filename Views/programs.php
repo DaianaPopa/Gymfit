@@ -1,5 +1,6 @@
 <?php require("../CONFIG/views_include_config.php");
-//Authenticator :: Validate(); ?>
+Authenticator :: Validate();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,9 +21,7 @@
 
  </head>
   <body>
-  <?php
-include("../includes/header.php");
-?>
+  <?php Authenticator :: Load_Header(); ?>
   <body background = "../Docs/cover.jpg" 
 style= " background-size: cover">
     

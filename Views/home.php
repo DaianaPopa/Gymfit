@@ -1,6 +1,6 @@
 <?php
 require("../CONFIG/views_include_config.php");
-//Authenticator :: Validate();
+Authenticator :: Validate();
 ?>
 
 <!DOCTYPE html>
@@ -22,11 +22,7 @@ require("../CONFIG/views_include_config.php");
     
 </head>
 <body>
-<?php
-  //Authenticator :: Load_Header();
-  include("../includes/header.php"); //Temporary for development
-?>
-
+<?php Authenticator :: Load_Header(); ?>
 <div class ="box">
 <div id="bg-image"></div>
 <div class="bg-text">

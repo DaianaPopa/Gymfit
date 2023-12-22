@@ -1,6 +1,10 @@
 <?php
 require("../CONFIG/views_include_config.php");
-//Authenticator :: Validate();
+Authenticator :: Validate();
+
+if (isset($_POST["workoutRemoveID"])){
+    Workout_Helper :: Remove($_POST["workoutRemoveID"], $_SESSION["UserID"]);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,5 +66,6 @@ require("../CONFIG/views_include_config.php");
             </div>
         </li>
     </ul>
+    <div class="sep-bar"></div>
 </body> 
 </html>

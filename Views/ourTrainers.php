@@ -1,6 +1,6 @@
 <?php
 require("../CONFIG/views_include_config.php");
-//Authenticator :: Validate();
+Authenticator :: Validate();
 if (isset($_SESSION["UserID"]) && isset($_POST["trainerIdToSet"])){
   Gym_Member :: Set_Members_Trainer_By_ID($_SESSION["UserID"], $_POST["trainerIdToSet"]);
 } 
@@ -17,9 +17,7 @@ if (isset($_SESSION["UserID"]) && isset($_POST["trainerIdToSet"])){
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-fmGlAWLI3Go9un1WX2Ut5vleFxSqyF6+RsTID0Cwj2P4M//pBuPvZP9tmIhOZsjcRdbjN4JQTmzXppGQV9wqGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="../JS/menu.js"></script>
-  <?php
-  include("../includes/header.php");
-  ?>
+  <?php Authenticator :: Load_Header(); ?>
 </head>
 <body class="normal-body">
   <div id="ourTrainers-back"></div>
