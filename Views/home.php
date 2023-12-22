@@ -1,11 +1,6 @@
 <?php
 require("../CONFIG/views_include_config.php");
-/* Code to redirect to login page if this is accessed without login, commented out for development
-if ($_SESSION["Login-State"] == false){
-    header("location: index.php");
-}
-*/
-//Load data within this page using a db query, with $_SESSION["UserID"] as a parameter
+//Authenticator :: Validate();
 ?>
 
 <!DOCTYPE html>
@@ -28,16 +23,8 @@ if ($_SESSION["Login-State"] == false){
 </head>
 <body>
 <?php
-if ($_SESSION["user-type"] == "Member"){
-  include("../includes/header.php");
-}
-else if ($_SESSION["user-type"] == "Trainer"){
-  include("../includes/trainerHeader.php");
-}
-else{
+  //Authenticator :: Load_Header();
   include("../includes/header.php"); //Temporary for development
-  echo $_SESSION["UserID"];
-}
 ?>
 
 <div class ="box">

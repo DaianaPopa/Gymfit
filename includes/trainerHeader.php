@@ -10,8 +10,9 @@
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <a href="#about">About Us</a>
-          <a href="macroDays.php">Your Members</a>
-          <a href="#workout">Sign Out</a>
+          <a href="#">Edit Your Programme</a>
+          <a href="yourMembers.php">Your Members</a>
+          <a href="../Controllers/logout.php">Sign Out</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">

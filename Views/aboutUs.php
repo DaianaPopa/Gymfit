@@ -1,3 +1,4 @@
+<?php //Authenticator :: Validate(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

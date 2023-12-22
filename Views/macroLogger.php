@@ -1,5 +1,6 @@
 <?php
 require("../CONFIG/views_include_config.php");
+//Authenticator :: Validate();
 //skibi test data replace with the real shite when the gazorpazorp is ready to sqwaunch
 $_SESSION['member_Id'] = 1;
 

@@ -1,5 +1,6 @@
 <?php
 require("../CONFIG/views_include_config.php");
+//Authenticator :: Validate();
 if (isset($_SESSION["UserID"]) && isset($_POST["trainerIdToSet"])){
   Gym_Member :: Set_Members_Trainer_By_ID($_SESSION["UserID"], $_POST["trainerIdToSet"]);
 } 

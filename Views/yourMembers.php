@@ -1,4 +1,5 @@
-<?php require("../CONFIG/views_include_config.php"); ?>
+<?php require("../CONFIG/views_include_config.php");
+//Authenticator :: Validate(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
