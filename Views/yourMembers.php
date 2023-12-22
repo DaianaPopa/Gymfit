@@ -1,6 +1,6 @@
 <?php require("../CONFIG/views_include_config.php");
-
-//Authenticator :: Validate(); ?>
+Authenticator :: Validate();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +14,7 @@
     <script src="../JS/menu.js"></script>
   </head>
 <body class="normal-body">
-<?php
-  //Authenticator :: Load_Header();
-  include("../includes/header.php"); //Temporary for development
-?>
+<?php Authenticator :: Load_Header(); ?>
   <div id="ourTrainers-back"></div>
   <div class="ourTrainers-header">
     <h2>Your Trainees</h2>

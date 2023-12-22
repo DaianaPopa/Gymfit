@@ -9,7 +9,7 @@
       />
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#about">About Us</a>
+          <a href="aboutUs.php">About Us</a>
           <a href="macroDays.php">Macro Tracker</a>
           <a href="ourTrainers.php">Our Trainers</a>
           <a href="workout.php">Work Out Planner</a>

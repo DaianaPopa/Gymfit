@@ -10,7 +10,6 @@ class MemberHelper{
               echo "<h3>".$row['Firstname']."</h3>";
               echo "</div>";
               echo "<p class='user-email'>".$row['Email']."</p>";
-              echo "<p class='user-email'>".$row['DOB']."</p>";
               echo "<div class='user-sep'></div>";
               echo "</div>";
             }

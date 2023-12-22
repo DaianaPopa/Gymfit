@@ -9,7 +9,7 @@
       />
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#about">About Us</a>
+          <a href="aboutUs.php">About Us</a>
           <a href="#">Edit Your Programme</a>
           <a href="yourMembers.php">Your Members</a>
           <a href="../Controllers/logout.php">Sign Out</a>
