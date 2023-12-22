@@ -2,7 +2,7 @@
    
     
       <div class="topnav">
-        <img
+        <img id=logo'
         src="../Docs/logo2.jpg"
         width="50"
         height="50"

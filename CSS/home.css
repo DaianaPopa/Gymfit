@@ -200,3 +200,6 @@ td, th {
   border: 1px solid #ccc; 
   text-align: left; 
 }
+.icon{
+  height: 100%;
+}
