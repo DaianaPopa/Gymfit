@@ -17,7 +17,7 @@ require("../CONFIG/views_include_config.php");
     <h1 class="title">Your Workout</h1>
     <a href="../Views/home.php" class="backlink">Home</a>
     <div class="sep-bar"></div>
-    <a href="" class="backlink">Add Workout</a>
+    <a href="../Views/addWorkout.php" class="backlink">Add Workout</a>
     <ul id="workout-list">
         <li class="workout-day">
             <h3 class="workout-day-title">Monday</h3>

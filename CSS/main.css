@@ -113,7 +113,7 @@ footer>div {
 .form label{
     display: block;
 }
-.form input{
+.form input, .form select{
     display: inline-block;
     font-size: 15px;
     height: 30px;
@@ -124,6 +124,18 @@ footer>div {
     border-radius: 12px;
     border: 0.5px solid grey;
     padding-left: 5px;
+}
+.form option{
+    background: black;
+}
+
+.form input[type="number"]{
+    width: 40%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 .form div{
     width: 100%;
@@ -229,6 +241,7 @@ footer>div {
 .workout-day-content{
     text-align: left;
     display: none;
+    margin: 10px;
 }
 .workout-day-content h4{
     margin-bottom: 0;

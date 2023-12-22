@@ -1,15 +1,10 @@
 <?php
 require("../CONFIG/views_include_config.php");
-//skibi test data replace with the real shite when the gazorpazorp is ready to sqwaunch
-$_SESSION['member_Id'] = 1;
 
 if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]) && isset($_POST["carbs"])){
-    Goal_Helper :: New_Goal($_SESSION['member_Id'],$_POST['protein'],$_POST['carbs'],$_POST['calories'],$_POST['fat']);
+    Goal_Helper :: New_Goal($_SESSION['UserID'],$_POST['protein'],$_POST['carbs'],$_POST['calories'],$_POST['fat']);
 }
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +20,7 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
     <h1 class="title">Todays Macro Goal</h1>
     <a href="../Views/macroDays.php" class="backlink">Back To Macro Tracker</a>
     <div class="sep-bar"></div>
-    <div class="macro-grid"><?php Goal_Helper :: Display_Goal($_SESSION['member_Id']);?></div>
+    <div class="macro-grid"><?php Goal_Helper :: Display_Goal($_SESSION['UserID']);?></div>
     <div class="sep-bar"></div>
     <h2 id="new-goal">Set a New Goal</h2>
             <form method="POST" class="form">

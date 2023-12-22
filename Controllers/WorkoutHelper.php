@@ -15,12 +15,12 @@ class Workout_Helper{
     }
 
     public static function Display_Workout($id, $day){
-        $workouts = Workout :: Get_Workouts_By_Day($id, $day);
-        if ($workouts->num_rows > 0) {
-            while($row = $workouts->fetch_assoc()) {
+        $result = Workout :: Get_Workouts_By_Day($id, $day);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
                 echo '<div class="workout-item">
                       <form action="workout.php" method="post">
-                      <input type="text" name="workoutRemoveID" value="'.$row['ID'].'">
+                      <input type="hidden" name="workoutRemoveID" value="'.$row['ID'].'">
                       <button class="remove-workout">--</button>
                       </form>
                       <h4>'.$row['workout'].'</h4>

@@ -2,7 +2,7 @@
 class Workout{
     public static function Add_Workout($reps,$sets,$day,$ID,$name){
         $conn = Config :: Db_Connect();
-        $sql = "INSERT INTO workout(Member_ID,sets,reps,DOTW,workout)values($ID,$sets,$reps,$day)";
+        $sql = "INSERT INTO workout(Member_ID,sets,reps,DOTW,workout)values($ID,$sets,$reps,'$day', '$name')";
         $conn->query($sql);
     }
     public static function Remove_Workout($workout_ID,$member_ID){
@@ -20,7 +20,7 @@ class Workout{
         $conn = Config :: Db_Connect();
         $sql = "SELECT ID,sets,reps,workout from workout WHERE Member_ID = $ID and DOTW = '$day'";
         $result = $conn->query($sql);
-        return $result->fetch_assoc();
+        return $result;
     }
 }
 ?>
