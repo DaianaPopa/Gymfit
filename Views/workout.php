@@ -8,6 +8,7 @@ require("../CONFIG/views_include_config.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Workout :: GymFit</title>
     <link rel="stylesheet" href="../CSS/main.css">
+    <script src="../JS/jquery.js"></script>
     <script src="../JS/workout.js"></script>
 </head>
 <body class="normal-body">
@@ -20,50 +21,43 @@ require("../CONFIG/views_include_config.php");
         <li class="workout-day">
             <h3 class="workout-day-title">Monday</h3>
             <div class="workout-day-content">
-                <p class="toggle-workout">/\</p>
                 <?php Workout_Helper :: Display_Workout(1, "Monday"); ?>
             </div>
         </li>
         <li class="workout-day">
             <h3 class="workout-day-title">Tuesday</h3>
             <div class="workout-day-content">
-            <p class="toggle-workout">/\</p>
             <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Tuesday"); ?>
             </div>
         </li>
         <li class="workout-day">
             <h3 class="workout-day-title">Wednesday</h3>
             <div class="workout-day-content">
-            <p class="toggle-workout">/\</p>
             <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Wednesday"); ?>
             </div>
         </li>
         <li class="workout-day">
             <h3 class="workout-day-title">Thursday</h3>
             <div class="workout-day-content">
-            <p class="toggle-workout">/\</p>
             <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Thursday"); ?>
             </div>
         </li>
         <li class="workout-day">
             <h3 class="workout-day-title">Friday</h3>
             <div class="workout-day-content">
-            <p class="toggle-workout">/\</p>
             <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Friday"); ?>
             </div>
         </li>
         <li class="workout-day">
             <h3 class="workout-day-title">Saturday</h3>
             <div class="workout-day-content">
-            <p class="toggle-workout">/\</p>
             <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Saturday"); ?>
             </div>
         </li>
         <li class="workout-day">
             <h3 class="workout-day-title">Sunday</h3>
-            <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Sunday"); ?>
             <div class="workout-day-content">
-            <p class="toggle-workout">/\</p>
+                <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Sunday"); ?>
             </div>
         </li>
     </ul>

@@ -20,7 +20,7 @@ class Workout_Helper{
             while($row = $workouts->fetch_assoc()) {
                 echo '<div class="workout-item">
                       <form action="workout.php" method="post">
-                      <input type="text" name="workoutID" value="'.$row['ID'].'">
+                      <input type="text" name="workoutRemoveID" value="'.$row['ID'].'">
                       <button class="remove-workout">--</button>
                       </form>
                       <h4>'.$row['workout'].'</h4>

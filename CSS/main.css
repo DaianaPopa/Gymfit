@@ -228,6 +228,7 @@ footer>div {
 }
 .workout-day-content{
     text-align: left;
+    display: none;
 }
 .workout-day-content h4{
     margin-bottom: 0;
@@ -236,7 +237,11 @@ footer>div {
     margin-top: 0;
 }
 .toggle-workout{
+    width: auto;
+    cursor: pointer;
+    display: block;
     text-align: center;
+    font-weight: 700;
 }
 .selected-day, .workout-item{
     border-radius: 5px;
