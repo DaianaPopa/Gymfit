@@ -22,6 +22,7 @@ if ($_SESSION["Login-State"] == false){
       rel="stylesheet"
       href="../CSS/home.css"
     />
+    <script src="../JS/menu.js"></script>
     
     
 </head>

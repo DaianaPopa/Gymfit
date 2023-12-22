@@ -12,8 +12,8 @@
           <a href="#about">About Us</a>
           <a href="macroDays.php">Macro Tracker</a>
           <a href="ourTrainers.php">Our Trainers</a>
-          <a href="#workout">Work Out Planner</a>
-          <a href="#workout">Sign Out</a>
+          <a href="workout.php">Work Out Planner</a>
+          <a href="../Controllers/logout.php">Sign Out</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
