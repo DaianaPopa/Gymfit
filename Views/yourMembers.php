@@ -1,4 +1,5 @@
 <?php require("../CONFIG/views_include_config.php");
+
 //Authenticator :: Validate(); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +26,7 @@
   <div class="sep-bar"></div>
   <div class="display-user-grid">
     <?php
-    MemberHelper :: Display_Members($_SESSION["User-ID"]); //Take the trainers session ID as parameter to be able to display
+    MemberHelper :: Display_Members($_SESSION["UserID"]); //Take the trainers session ID as parameter to be able to display
     ?>
   </div>
 </body>

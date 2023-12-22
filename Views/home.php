@@ -25,6 +25,9 @@ require("../CONFIG/views_include_config.php");
 <?php
   //Authenticator :: Load_Header();
   include("../includes/header.php"); //Temporary for development
+  echo $_SESSION["UserID"];
+  echo $_SESSION["login-state"];
+  echo $_SESSION["user-type"];
 ?>
 
 <div class ="box">

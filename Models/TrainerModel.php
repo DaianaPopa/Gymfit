@@ -37,7 +37,8 @@ class Gym_Trainer{
         $conn = Config :: Db_Connect();
         $sql = "SELECT Trainer_ID from trainer Where Email = '$email' AND Trainer_Password = '$password'";
         $result = $conn->query($sql);
-        return $UserID["Trainer_ID"];
+        $row = $result->fetch_assoc();
+        return $row["Trainer_ID"];
     }
 
     public static function Get_Trainers(){

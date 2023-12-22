@@ -2,16 +2,16 @@
 
 class MemberHelper{
     public static function Display_Members($id){
-        $result = Gym_Trainer :: Get_Members_By_Trainer_ID($id); //Use session ID for trainer
+        $result = Gym_Trainer :: Get_Members_By_Trainer_ID($id);
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
               echo "<div class='user-item'>";
               echo "<div class='user-top'>";
-              echo "<h3>".$row['firstname']."</h3>";
+              echo "<h3>".$row['Firstname']."</h3>";
               echo "</div>";
-              echo "<p class='user-email'>".$row['email']."</p>";
+              echo "<p class='user-email'>".$row['Email']."</p>";
+              echo "<p class='user-email'>".$row['DOB']."</p>";
               echo "<div class='user-sep'></div>";
-              echo "<p>".$row['description']."<p>";
               echo "</div>";
             }
           } else {
