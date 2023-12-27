@@ -61,6 +61,20 @@ class Gym_Trainer{
         $result = $conn->query($sql);
         return $result;
     }
+
+    public static function Get_Programme_By_Trainer_ID($id){
+        $conn = Config :: Db_Connect();
+        $sql = "SELECT description from trainer where Trainer_ID = '$id'";
+        $result = $conn->query($sql);
+        $row = $result->fetch_assoc();
+        return $row["description"];
+    }
+
+    public static function Set_Trainer_Programme($id, $desc){
+        $conn = Config :: Db_Connect();
+        $sql = "UPDATE trainer SET description = '$desc' WHERE Trainer_ID = '$id'";
+        $conn->query($sql);
+    }
 }
 
 ?>

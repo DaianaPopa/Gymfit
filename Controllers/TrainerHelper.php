@@ -27,6 +27,15 @@ class TrainerHelper{
             echo "<h2>There are currently no trainers or programmes avaliable, check back later.</h2>";
           }
     }
+
+    public static function Get_Programme($id){
+      $result = Gym_Trainer :: Get_Programme_By_Trainer_ID($id);
+      return $result;
+    }
+    public static function Set_Programme($id, $desc){
+      Gym_Trainer :: Set_Trainer_Programme($id, $desc);
+    }
+    
 }
 
 ?>

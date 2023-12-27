@@ -18,11 +18,9 @@ Authenticator :: Validate();
       href="../CSS/home.css"
     />
     <script src="../JS/menu.js"></script>
-    
-    
 </head>
-<body>
-<?php Authenticator :: Load_Header(); ?>
+<body class='normal-body'>
+  <?php Authenticator :: Load_Header(); ?>
 <div class ="box">
 <div id="bg-image"></div>
 <div class="bg-text">
@@ -32,9 +30,5 @@ Authenticator :: Validate();
   <p>Thank you for joining our gym</p>
 </div>
 </div>
-
-<?php
-include("../includes/footer.php");
-?>
 </body>
 </html>

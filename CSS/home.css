@@ -237,11 +237,14 @@ p {
   margin: 0;
 }
 .program textarea {
-  width: 60%; 
-  height: 80px; 
+  width: 80%; 
+  height: 300px; 
   padding: 10px;
   box-sizing: border-box;
   margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.425);
+  border-radius: 5px;
+  font-size: 15px;
 }
 #trainer-image {
   background-image: url("../Docs/trainerBack.jpg");
@@ -261,4 +264,41 @@ p {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.sep-bar{
+  border-top: 2px solid whitesmoke;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#edit-programme-btn{
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.button{
+  text-decoration: none;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#programme-edit > form{
+  margin: auto;
+}
+#programme-edit{
+  display: none;
+}
+#cancel-programme-edit{
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  display: none;
 }

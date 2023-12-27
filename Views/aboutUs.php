@@ -17,6 +17,7 @@ Authenticator :: Validate(); ?>
       rel="stylesheet"
       href="../CSS/home.css"
     />
+    <script src="../JS/menu.js"></script>
     
 </head>
 <body>  
