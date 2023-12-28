@@ -39,12 +39,7 @@ Authenticator :: Validate(); ?>
         <br>Whatever your goal and whatever you want to achieve, 
         <br> we are here to help you.</p>
         <br>
-        <div>
-            <button class="btn btn-2" type="submit" value="Send" class="sendButton">Join Now</button>
-        </div>
         <br>
-        <p><a href="#">Terms & Conditions</a></p>
-      <p><a href="#">Health and Safety</a></p>
     </div>
     
 <div class="sideBar">
@@ -54,7 +49,6 @@ Authenticator :: Validate(); ?>
         <p>Shower;</p>
         <p>Open 24/7</p>
        <p><a href="../Views/ourTrainers.php">Personal Training;</a></p>
-      <p><a href="../Views/foodLibrary.php">Access food library;</a></p>
         <p><a href="../Views/macroGoal.php">Set a daily goal;</a></p>
 
     
@@ -63,8 +57,5 @@ Authenticator :: Validate(); ?>
       </section>
   </main>
 </div>
-<?php
-include("../includes/footer.php");
-?>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<?php //Authenticator :: Validate(); ?>
+<?php Authenticator :: Validate(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +20,7 @@
 <body>
  
 <?php
-include("../includes/header.php");
+Authenticator :: Load_Header();
 ?>
 
  <div id="back-image"></div>

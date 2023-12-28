@@ -29,6 +29,7 @@ header{
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
   display: none;
+  z-index: 999;
 }
 
 /* Style navigation menu links */
@@ -110,7 +111,7 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: -1;
   width: 80%;
   padding: 20px;
   text-align: center;
@@ -301,4 +302,7 @@ p {
   margin-bottom: 10px;
   text-decoration: underline;
   display: none;
+}
+.trainer-form{
+  width: auto;
 }
