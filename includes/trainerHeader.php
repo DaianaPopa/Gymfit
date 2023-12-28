@@ -9,6 +9,7 @@
       />
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
+          <a href="home.php">Home</a>
           <a href="aboutUs.php">About Us</a>
           <a href="trainerPrograms.php">Edit Your Programme</a>
           <a href="yourMembers.php">Your Members</a>
