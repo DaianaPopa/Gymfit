@@ -26,7 +26,7 @@ if (isset($_POST["workoutRemoveID"])){
         <li class="workout-day">
             <h3 class="workout-day-title">Monday</h3>
             <div class="workout-day-content">
-                <?php Workout_Helper :: Display_Workout(1, "Monday"); ?>
+                <?php Workout_Helper :: Display_Workout($_SESSION["UserID"], "Monday"); ?>
             </div>
         </li>
         <li class="workout-day">

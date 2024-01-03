@@ -6,8 +6,8 @@ class Food{
         return "food";
     }
 
-    public static function Get_Foods(){
-        
+    public static function GetFoods(){
+        //unused
     }
 
 

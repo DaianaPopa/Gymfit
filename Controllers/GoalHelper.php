@@ -14,7 +14,6 @@ class Goal_Helper{
     }
 
     public static function New_Goal($ID,$protein,$carbs,$calories,$fat){
-
         Macro_Goals :: Update_Goal($ID,$protein,$carbs,$fat,$calories);
         self :: Set_Success();
 

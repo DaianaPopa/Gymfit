@@ -31,6 +31,7 @@ Class Register
     public static function Register_Member($emailReg, $passwordReg, $firstname, $surname)
     {
         Gym_Member :: Create_Member($emailReg, $passwordReg, $firstname, $surname);
+        Macro_Goals :: Create_Goal(Gym_Member :: Get_Member_ID_By_Email_Passsword($emailReg,$passwordReg),0,0,0,0);
         Login :: Login_Member($emailReg, $passwordReg);
     }
     public static function Register_Trainer($emailReg, $passwordReg, $firstname, $surname)
