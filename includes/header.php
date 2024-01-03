@@ -2,13 +2,14 @@
    
     
       <div class="topnav">
-        <img id=logo'
+      <img id=logo'
         src="../Docs/logo2.jpg"
         width="50"
         height="50"
       />
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
+          <a href="home.php">Home</a>
           <a href="aboutUs.php">About Us</a>
           <a href="macroDays.php">Macro Tracker</a>
           <a href="ourTrainers.php">Our Trainers</a>

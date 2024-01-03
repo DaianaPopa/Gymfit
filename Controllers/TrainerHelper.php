@@ -8,7 +8,7 @@ class TrainerHelper{
               echo "<div class='user-item'>";
               echo "<div class='user-top'>";
               echo "<h3>".$row['Firstname']."</h3>";
-              echo "<form action='ourTrainers.php' method='post'>";
+              echo "<form class='trainer-form' action='ourTrainers.php' method='post'>";
               echo "<input type='hidden' name='trainerIdToSet' value=".$row['Trainer_ID']. " </input>";
               if ($currentTrainer == $row['Trainer_ID']){
                 echo "<h3>Applied To Programme.</h3>";

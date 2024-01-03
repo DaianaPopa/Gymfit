@@ -3,14 +3,12 @@ session_start();
 //Config
 include("Models/ConfigModel.php");
 //Models
-include("Models\FoodModel.php");
 include("Models\GoalModel.php");
 include("Models\macroModel.php");
 include("Models\MemberModel.php");
 include("Models\TrainerModel.php");
 include("Models\workoutModel.php");
 //Controllers
-include("Controllers/foodHelper.php");
 include("Controllers\GoalHelper.php");
 include("Controllers\LoginHelper.php");
 include("Controllers\MacroHelper.php");

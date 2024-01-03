@@ -8,14 +8,17 @@ Authenticator :: Validate();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/home.css">
     <title>Gymfit :: Macros</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <script src="../JS/workout.js"></script>
+    <script src="../JS/menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="normal-body">
+    <?php Authenticator :: Load_Header(); ?>
     <div id="back-image"></div>
     <h1 class="title">Macro Tracker</h1>
-    <a href="../Views/home.php" class="backlink">Home</a>
     <div class="macro-header">
         <a href="../Views/macroLogger.php">Log a Macro</a>
         <a href="../Views/macroGoal.php">See Daily Goal</a>

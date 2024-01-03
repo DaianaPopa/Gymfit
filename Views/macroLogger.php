@@ -43,9 +43,5 @@ if (isset($_POST["protein"]) && isset($_POST["calories"]) && isset($_POST["fat"]
             </form>
             <div class="sep-bar"></div>
     </div>
-    
-<?php
-//include("../Controllers/footer.php");
-?>
 </body>
 </html>
